@@ -32,9 +32,13 @@
 - Decoration, Formatting, Invisible
   텍스트가 아닌 콘텐츠가 순수한 장식 이거나, 시각적으로만 사용 되었거나, 사용자에게 보이지 않는다면 보조기술에서 이를 읽지 않고 무시하도록 처리해야 합니다.
 
+<br/>
+
 ### 1.2 Time-based Media
 
 시간 기반 미디어의 대체 수단을 제공해야 합니다.
+
+<br/>
 
 #### 1.2.1 Audio-only and Video-only (Prerecorded)
 
@@ -43,6 +47,8 @@
 👎 녹화된 비디오 미디어 콘텐츠에 대한 대체 텍스트가 없어서, 미디어를 재생할 수 없는 경우 내용을 확인하기 어렵습니다. `data-meta-title`에 있는 콘텐츠에 대한 설명을 보여주는 대체 텍스트가 필요합니다.  
 [https://www.pexels.com/ko-kr/](https://www.pexels.com/ko-kr/)
 
+<br/>
+
 #### 1.2.2 Captions (Prerecorded)
 
 자막은 동기화 된 미디어의 미리 녹음된 모든 오디오 컨텐츠에 제공되어야 합니다.
@@ -50,6 +56,8 @@
 
 👎 오디오 컨텐츠 외에 별도의 자막이 존재하지 않아, 오디오를 듣기 힘든 환경에서 내용을 확인할 수 없습니다.
 [https://audiojungle.net/search?sort=rating](https://audiojungle.net/search?sort=rating)
+
+<br/>
 
 #### 1.2.3 Audio Description or Media Alternative
 
@@ -60,6 +68,8 @@
 👍 오디오의 내용에 대해 설명해주는 대체 텍스트가 존재합니다. 오디오를 재생하지 않아도 오디오 내용에 대해 예상할 수 있습니다.
 [https://www.bensound.com/](https://www.bensound.com/)
 
+<br/>
+
 #### 1.2.4 Captions (Live)
 
 생방송 미디어에 실시간으로 제공되는 오디오 콘테츠에 대한 자막이 제공되어야 합니다.
@@ -68,6 +78,8 @@
 👎 실시간 오디오 콘텐츠에 대한 자막이 제공되지 않습니다. 오디오 재생이 힘든 환경에서는 콘텐츠에 대한 내용을 확인할 수 없습니다.
 [https://www.youtube.com/watch?v=36YnV9STBqc](https://www.youtube.com/watch?v=36YnV9STBqc)
 
+<br/>
+
 #### 1.2.5 Audio Description (Prerecorded)
 
 오디오 설명은 사전 녹화된 비디오 콘텐츠에 제공되어야 합니다.
@@ -75,11 +87,15 @@
 👍 비디오 콘텐츠에 대한 세부 내용을 오디오로 설명해주고 있습니다. 영상을 시청하는에 어려움을 겪는 사람들에게 시각적인 정보를 전달해 줄 수 있습니다.
 [https://www.youtube.com/watch?v=BfGYV7dHIbY&list=UURZkbmj75un6xMQo6mjUWyA&index=4](https://www.youtube.com/watch?v=BfGYV7dHIbY&list=UURZkbmj75un6xMQo6mjUWyA&index=4)
 
+<br/>
+
 #### 1.2.6 Sign Language (Prerecorded)
 
 수화 통역은 사전 녹음된 모든 오디오 콘텐츠에 제공되어야 합니다.
 
 - 자막을 읽기 힘든 주 언어가 수환인 사람들에게도 오디오 콘텐츠에 대한 정보를 제공해 줄 수 있어야 합니다.
+
+<br/>
 
 #### 1.2.7 Extended Audio Description (Prerecorded)
 
@@ -87,11 +103,15 @@
 
 - 시각 장애인, 화면을 볼 수 없는 저시력자, 시각 정보를 시각적으로 해석하는 데 어려움이 있는 인지 장애가 있는 사람들은 종종 시각 정보의 음성 설명을 사용합니다. 그런데 설명에 비해 대사가 너무 많으면 전달력이 부족할 수 있습니다. 이 때 확장된 오디오 설명으로 비디오를 이해하는 데 필요한 추가 정보를 제공할 수 있어야 합니다.
 
+<br/>
+
 #### 1.2.8 Media Alternative (Prerecorded)
 
 사전 녹음, 녹화된 미디어 콘텐츠는 적절한 대체 수단이 제공되어야 합니다.
 
 - 잘 보지 못하거나, 듣지 못하는 사람들에게도 영상과 음성에 대한 정보에 접근성을 제공해 줄 수 있어야 합니다.
+
+<br/>
 
 #### 1.2.9 Audio-only (Live)
 
@@ -99,9 +119,14 @@
 
 - 시각장애인이거나 시력이 낮은 사람뿐만 아니라 인지적 한계가 있는 사람도 시각 정보의 음성 설명에서 이익을 얻을 수 있어야 합니다.
 
+<br/>
+<br/>
+
 ### 1.3 Adaptable
 
 정보나 구조를 잃지 않고 다양한 방식(ex: 간단한 레이아웃)으로 표현할 수있는 컨텐츠를 만듭니다.
+
+<br/>
 
 #### 1.3.1 Info and Relationships
 
@@ -109,6 +134,8 @@
 
 - 표시 형식이 변경될 때 시각 또는 청각 형식에 의해 암시되는 정보가 유지되도록 하는 것입니다.
 - 스크린 리더를 사용하는 시각장애인 사용자는 색상을 통해 전달되는 정보를 텍스트로 이용할 수 있으면 정보에 대해 더 접근할 수 있습니다.
+
+<br/>
 
 #### 1.3.2 Meaningful Sequence
 
@@ -119,11 +146,15 @@
 [https://www.naver.com](https://www.naver.com)
 네이버 이미지보다 우측 상단의 다른 콘텐츠가 먼저 존재하지만, html구조에서는 네이버 로고가 앞서있으므로 콘텐츠에 의미 있는 순서를 제공할 수 있습니다.
 
+<br/>
+
 #### 1.3.3 Sensory Characteristics
 
 콘텐츠를 이해하고 조작하기 위해 제공된 가이드라인은 모양, 색, 크기, 시각적 위치, 방향 또는 소리와 같은 컴포넌트의 감각적인 특성에만 의존하지 않습니다.
 ![](https://images.velog.io/images/luna238/post/0cb7a8c3-65de-47a1-b9c2-b9619294d85f/image.png)
 텍스트 문구를 제외한 앞의 모양만 있다면 의사 전달이 명확하게 되지 않을 수 있기 때문에, 감각적인 특성 외에 별도의 정보를 제공해주는 것이 바람직합니다.
+
+<br/>
 
 #### 1.3.4 Orientation
 
@@ -140,6 +171,8 @@
 [https://www.facebook.com](https://www.facebook.com)
 콘텐츠는 방향을 변경했을 때 고정된 뷰포트가 아닌 화면의 회전 방향에 따라 변경된 뷰포트를 보여줌으로써, 화면 방향이 제약된 상황에서도 불편하지 않게 사용할 수 있어야 합니다.
 
+<br/>
+
 #### 1.3.5 Identify Input Purpose
 
 사용자에 관한 정보를 수집하는 각 입력 필드의 목적은 다음과 같은 경우에 프로그래밍 방식으로 결정될 수 있습니다. 이 지침을 준수하면 인지 장애가 있는 사용자가 텍스트를 읽고 입력하는 것이 쉬워져 접근성을 향상 시킵니다. 또한 웹 사이트의 언어를 잘 모르는 사용자 또한 접근성이 향상됩니다.
@@ -151,6 +184,8 @@
 [https://account.booking.com/](https://account.booking.com/)
 html코드 상으로는 input태그에 autocomplete 속성의 값을 추가하면 됩니다.
 
+<br/>
+
 #### 1.3.6 Identify Purpose
 
 HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 UI 컴포넌트, 아이콘 및 영역의 목적을 프로그래밍 방식으로 결정할 수 있습니다.
@@ -161,9 +196,14 @@ HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 UI 컴포넌트,
   ![](https://images.velog.io/images/luna238/post/ef7c6349-0f6e-4eb4-b673-bced27bdcefe/image.png)
   [https://www.airbnb.co.kr](https://www.airbnb.co.kr)
 
+<br/>
+<br/>
+
 ### 1.4 Distinguishable
 
 사용자가 콘텐츠를 보고 들을 수 있도록 명확하게 구분할 수 있어야 합니다.
+
+<br/>
 
 #### 1.4.1 Use of Color
 
@@ -174,10 +214,14 @@ HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 UI 컴포넌트,
 [https://www.gap.co.kr](https://www.gap.co.kr)
 `GAP`은 색상과 함께 텍스트를 함께 제공하여 색상의 구분이 어려운 환경에서도 충분한 정보를 제공하고 있습니다.
 
+<br/>
+
 #### 1.4.2 Audio Control
 
 3초 이상 자동으로 웹 페이지가 오디오를 출력한다면, 오디오 재생을 일시정지 하거나 멈추게 하는 기능 또는 오디오 볼륨을 조절할 수 있는 기능을 제공해야 합니다.
 ![](https://images.velog.io/images/luna238/post/f70914ea-2c74-42c2-bd35-c778dbbf7133/image.png)
+
+<br/>
 
 #### 1.4.3 Contrast (Minimum)
 
@@ -190,6 +234,8 @@ HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 UI 컴포넌트,
 - Logotypes
   로고나 브랜드의 텍스트는 최소한의 명도 대비 요구가 없습니다.
 
+<br/>
+
 #### 1.4.4 Resize text
 
 캡션 및 이미지 텍스트를 제외하고, 텍스트는 콘텐츠와 기능의 손실없이 200% 이상 보조기술 없이 크기 조정이 가능해야 합니다.
@@ -200,6 +246,8 @@ HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 UI 컴포넌트,
   [https://google.com/](https://google.com/)
 
 화면의 크기를 200%로 늘려도 손실없이 텍스트를 볼 수 있어야 합니다.
+
+<br/>
 
 #### 1.4.5 Images of Text
 
@@ -216,13 +264,20 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 [https://www.coupang.com/](https://www.coupang.com/)
 콘텐츠의 중요성은 이미지 보다는 h1태그를 사용하여 텍스트로 제목임을 나타내야 합니다.
 
+<br/>
+<br/>
+
 ### 2.4 Navigable(탐색가능)
 
 사용자가 탐색하고, 콘텐츠를 찾고, 어디에 있는지 판단 할 수있는 방법을 제공해야 합니다.
 
+<br/>
+
 #### 2.4.1 Bypass Blocks
 
 반복되는 콘텐츠 블록을 건너 뛸 수 있는 기능을 제공해야 합니다.
+
+<br/>
 
 #### 실패사례 : Bypass Blocks를 준수하지 않은 메인 뉴스 부분으로 건너띌 수 있는 기능이 없는 뉴스기사를 보여주는 웹사이트
 
@@ -230,9 +285,13 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 - screen-reader 사용자 : 메인 뉴스 부분에 도달할 때 까지 많은 수의 단어를 들어야 합니다.
 - 화면 확대기 사용자 : 웹사이트의 상단부터 메인 뉴스 부분에 도달할 때 까지 화면을 내려서 찾아봐야 합니다.
 
+<br/>
+
 #### 2.4.2 Page Titled
 
 웹 페이지는 주제나 목적을 설명하는 적절한 제목이 제공되어야 합니다.
+
+<br/>
 
 #### 실패사례 : title이 없는 경우
 
@@ -240,9 +299,13 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 - screen-reader 사용자 : 이 웹사이트가 어떤 주제나 목적을 가지고 있는 사이트인지 title이 없기 때문에 알기 어렵다.
 
+<br/>
+
 #### 2.4.3 Focus Order
 
 웹 페이지를 순차적으로 탐색 할 수 있고 탐색 순서가 의미 또는 작업에 영향을 주는 경우, 포커스 가능 컴포넌트는 의미와 작동 가능성을 유지하는 순서로 포커스를 받아야 합니다.
+
+<br/>
 
 #### 예시 : 회원가입 Form
 
@@ -252,6 +315,8 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 - 실패 예시 : 이메일 input 포커스 -> 회원가입 button 포커스 -> 비밀번호 input 포커스 (작동 가능성 유지 ❌)
 
+<br/>
+
 #### 2.4.4 Link Purpose (In Context)
 
 각 링크의 목적은 링크 텍스트 만으로 또는 링크 텍스트와 프로그래밍 방식으로 결정된 링크 컨텍스트와 함께 결정될 수 있어야 합니다.
@@ -259,6 +324,8 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 #### 예시 : 링크에 해당 URI의 정보에 대한 설명을 제공하는 텍스트가 포함되어 있는 성공사례
 
 ![](https://images.velog.io/images/ywc8851/post/05435882-b686-4bf6-b181-613410627818/image.png)
+
+<br/>
 
 #### 2.4.5 Multiple Ways
 
@@ -268,14 +335,20 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ❗ 쇼핑몰과 같은 결제가 필요한 과정에서 로고를 클릭시 페이지의 이동이 안되는 경우는 프로세스의 결과 또는 단계인 경우이기 때문에 개발자가 의도적으로 a태그를 사용하지 않은 것으로 볼 수 있습니다.
 
+<br/>
+
 #### 2.4.6 Headings and Labels
 
 제목, 레이블은 적절한 주제 및 목적을 설명해야 합니다.
+
+<br/>
 
 #### 예시 : Form에 어떤 정보를 입력해야하는지 알려주는 성공사례
 
 ![](https://images.velog.io/images/ywc8851/post/9add0644-8b88-4f12-9b22-69f4cfca9fa0/image.png)
 로그인 Form은 사용자의 회원 아이디와 비밀번호를 묻습니다. ID과 비밀번호를 묻는 두 개의 입력 필드로 구성됩니다. 따라서 사용자가 어떠한 정보를 입력해야 되는지 알 수 있습니다.
+
+<br/>
 
 #### 2.4.7 Focus Visible
 
@@ -294,6 +367,8 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 }
 ```
 
+<br/>
+
 #### 2.4.8 Location
 
 일련의 웹 페이지에서 사용자 위치에 대한 정보를 이용 가능해야 합니다.
@@ -302,9 +377,13 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ![](https://images.velog.io/images/ywc8851/post/a3393133-7f0d-4141-b8cd-f7612316edb4/image.png)
 
+<br/>
+
 #### 2.4.9 Link Purpose (Link Only)
 
 링크의 목적이 일반적인 사용자에게 모호한 경우를 제외하고 링크 텍스트만으로 각 링크의 목적을 식별 할 수 있는 방법을 제공해야 합니다.
+
+<br/>
 
 #### 2.4.10 Section Headings
 
@@ -332,9 +411,14 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 ... search results are returned in this section ...
 ```
 
+<br/>
+<br/>
+
 ### 2.5 Input Modalities(입력 양식)
 
 키보드가 아닌 다양한 입력을 통해 기능을 보다 쉽게 조작 할 수 있도록 만들어야 합니다.
+
+<br/>
 
 #### 2.5.1 Pointer Gestures
 
@@ -352,6 +436,8 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 - 위에선 존재하지 않았던 대체하는 수단을 제공한다.
 
+<br/>
+
 #### 2.5.2 Pointer Cancellation
 
 싱글 포인터를 사용하여 작동할 수 있는 기능의 경우 이 지침은 실수로 잘못된 위치를 만지거나 클릭 할 수 있는 손 떨림, 운동 장애가 있는 사람들을 돕습니다. 실수로 인해 의도하지 않은 동작이 발생했을 때 취소할 수 있는 기능을 제공합니다.
@@ -362,6 +448,8 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
   함수의 완료는 up 이벤트에 있고 완료 전에 함수를 중단하거나, 완료 후 함수를 실행 취소하는 방법을 제공합니다.
 - up 이벤트를 통한 취소(Reversal)
   사용자가 잘못된 위치를 터치 했을 때, 손가락이나 포인터를 들어 올리기 전에 손가락이나 포인터를 그 위치에서 벗어나게 하여 의도하지 않은 작업을 취소할 수 있습니다.
+
+<br/>
 
 #### 2.5.3 Label in Name
 
@@ -380,12 +468,16 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 <label for="notification">Notify me of delays</label>
 ```
 
+<br/>
+
 #### 2.5.4 Motion Actuation
 
 필수적으로 동작(모션)이 작동을 위해 1필요한 경우가 아니라면 동작에 의존하지 않는 것이 좋습니다만, 동작을 통한 기능 수행이 필요한 경우 대체 인터페이스를 제공하고, 해당 기능을 끌 수 있도록 해야 합니다.
 
 - 동작(모션) 실행 기능에 대한 대체 인터페이스를 제공해야 합니다.
 - 사용자가 동작(모션) 실행 기능을 끌 수 있도록 해야 합니다.
+
+<br/>
 
 #### 2.5.5 Target Size
 
@@ -398,6 +490,8 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ![](https://images.velog.io/images/ywc8851/post/05aa7e67-cce5-4330-a94b-010071c2a42f/image.png)
 
+<br/>
+
 #### 2.5.6 Concurrent Input Mechanisms
 
 웹 콘텐츠는 제한이 필수적인 경우, 예를 들면 콘텐츠 보안 보장 또는 사용자 설정을 침해하면 안되는 경우를 제외하고 플랫폼에서 사용할 수 있는 입력 방식을 제한하지 않습니다.
@@ -405,13 +499,13 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 <br/>
 <br/>
 
-## 3. 이해 용이성의 원칙
+## 3. Understandable
 
-### 3.1 가독성
+### 3.1 Readable
 
-#### 3.1.1 페이지의 언어
+#### 3.1.1 Language of Page
 
-사용자의 화면에서 정보와 동작이 반드시 이해 가능해야 한다. 텍스트 콘텐츠들이 읽을 수 있고, 이해가 가능하게 만들어야 합니다.
+사용자의 화면에서 정보와 동작이 반드시 이해 가능해야 합니다. 사용자의 화면에서 정보와 동작이 반드시 이해 가능해야 한다. 텍스트 콘텐츠들이 읽을 수 있고, 이해가 가능하게 만들어야 합니다.
 
 각각의 웹 페이지들은 어떤 언어를 사용할 것인지, 반드시 프로그래밍적으로 결정되어야 합니다. 프로그래밍적으로 결정된다는 것은 다양한 사용자 에이전트가 제공된 데이터의 정보를 추출해 사용자에게 제공하는 것을 의미합니다.
 
@@ -428,7 +522,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 <br/>
 
-#### 3.1.2 부분 언어
+#### 3.1.2 Language of Parts
 
 3.1.1과 내용은 같습니다. 하지만 설정된 언어와는 다른 언어가 사용됐을 때의 접근성의 표준을 정의하고 있습니다.
 
@@ -448,7 +542,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 <br/>
 
-#### 3.1.3 익숙하지 않은 단어들
+#### 3.1.3 Unusual Words
 
 특정 장애로 인해 단어 사용 및 특수 단어 또는 용법을 이해하기 어려울 때, 이 메커니즘은 이 청중들에겐 굉장히 중요합니다.
 
@@ -464,7 +558,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 <br/>
 
-#### 3.1.4 약어
+#### 3.1.4 Abbreviations
 
 약어의 뜻이나 확장된 형식을 확인할 수 있는 기능을 제공해야 합니다.
 
@@ -478,7 +572,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 <br/>
 
-#### 3.1.5 읽기 수준
+#### 3.1.5 Reading Level
 
 중등교육 과정보다 높은 읽기 능력을 요구하는 복잡한 내용이 포함된 웹 페이지라면, 사용자의 이해를 돕기 위해 보조 설명, 적절한 이름, 제목 등을 제공해야 합니다.
 
@@ -504,7 +598,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 <br/>
 
-#### 3.1.6 발음
+#### 3.1.6 Pronunciation
 
 문맥 상에서 알려진 발음 없이 모호한 단어의 의미가 있는 단어들의 특정한 발음을 알기 쉽게 하는 기능을 제공해야 합니다.
 
@@ -522,9 +616,9 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 <br/><br/>
 
-### 3.2 예측 가능성
+### 3.2 Predictable
 
-#### 3.2.1 포커스 상태
+#### 3.2.1 On Focus
 
 UI 컴포넌트가 포커스 상태가 되면, 콘텍스트를 변경하지 않습니다.
 
@@ -542,7 +636,7 @@ UI 컴포넌트가 포커스 상태가 되면, 콘텍스트를 변경하지 않�
 
 <br/>
 
-#### 3.2.2 입력 상태
+#### 3.2.2 On Input
 
 UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사용자에게 동작을 알리지 않는 한, 자동으로 콘텍스트가 변경되어서는 안 됩니다. 이 표준은 대화형 콘텐츠를 보다 예측 가능하게 만들어 장애가 있는 사용자를 돕습니다. 콘텍스트의 예기치 않은 변경은 시각 장애가 있거나 인지 장애가 있는 사용자가 콘텐츠를 사용할 수 없을 정도로 혼란스러울 수 있습니다.
 
@@ -552,7 +646,7 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
 
 <br/>
 
-#### 3.2.3 일관된 내비게이션
+#### 3.2.3 Consistent Navigation
 
 웹 페이지 집합 내의 여러 웹 페이지에서 반복되는 내비게이션은 사용자가 변경을 시작하지 않는 한, 반복할 때마다 상대적으로 동일한 순서로 발생해야 합니다.
 
@@ -566,7 +660,7 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
 
 <br/>
 
-#### 3.2.4 일관성
+#### 3.2.4 Consistent Identification
 
 웹 페이지 집합 내에서 동일한 기능을 가진 컴포넌트는 일관되게 구별되어야 됩니다. 스크린 리더를 이용하는 사람은 보통 서로 다른 웹 페이지이더라도 기능이 친숙하면 그 친숙함에 의존해 웹 사이트를 쉽게 조작할 수 있다. 만약 같은 기능의 레이블이 다른 웹 페이지에서는 다르게 표시되면 그 사이트를 사용하기가 훨씬 더 어렵습니다.
 
@@ -580,7 +674,7 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
 
 <br/>
 
-#### 3.2.5 요구 변경
+#### 3.2.5 Change on Request
 
 콘텍스트 변경은 사용자 요청에 의해서만 시작되거나, 변경 사항을 끄는 기능을 제공해야 합니다. 3.2.2의 입력 상태와 유사한 기준입니다. 목록에서 항목을 선택한 후 자동으로 새창을 열거나 폼을 전송하는 것 같이 예기치 않은 변경으로 발생하는 혼란을 없앱니다.
 
@@ -589,13 +683,13 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
 - `지금 업데이트하기` 버튼 콘텐츠를 자동으로 업데이트하는 대신 콘텐츠의 새로 고침을 요구하는 '지금 업데이트하기' 버튼을 제공한다
 - 자동 리디렉션 리디렉션이 발생했는지 사용자가 깨닫지 못하게 하는 방식으로 사용자를 기존 페이지에서 새 페이지로 자동으로 리디렉션 한다.
 
-### 3.3 입력 도움
+### 3.3 Input Assistance
 
 실수를 피하고 해결할 수 있도록 도움을 제공해야 합니다.
 
 <br/>
 
-#### 3.3.1 오류 확인
+#### 3.3.1 Error Identification
 
 사용자가 오류가 발생했음을 인지하고 무엇이 잘못되었는지 확인할 수 있도록 하는 것입니다. 오류 메시지는 가능한 한 구체적이어야 합니다. 양식을 다시 표시하고 오류가 있는 필드를 표시하는 것만으로는 인식하기에 충분하지 않습니다.
 
@@ -609,7 +703,7 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
 
 <br/>
 
-#### 3.3.2 레이블 또는 지침
+#### 3.3.2 Labels or Instructions
 
 콘텐츠에 사용자 입력이 필요한 경우, 레이블 또는 지침(Instructions)이 제공되어야 합니다. 콘텐츠 제작자가 폼에 있는 컨트롤을 식별할 수 있는 지침이나 레이블을 넣어 사 용자들이 어떤 입력 데이터가 필요한지 알 수 있게 하는 것입니다.
 
@@ -620,7 +714,7 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
 
 <br/>
 
-#### 3.3.3 오류 제안
+#### 3.3.3 Error Suggestion
 
 입력 오류가 자동으로 감지되고 수정에 대한 제안이 알려진 경우, 콘텐츠의 보안이나 목적을 저해하지 않는 선에서 사용자에게 제안 사항이 제공되어야 합니다.
 
@@ -632,7 +726,7 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
 
 <br/>
 
-#### 3.3.4 오류 예방:법률, 재무, 자료
+#### 3.3.4 Error Prevention (Legal, Financial, Data)
 
 사용자에 대한 법적 약속 또는 금융 거래가 발생하거나, 데이터 스토리지 시스템에서 사용자 등록 가능 데이터를 수정 또는 삭제하거나, 사용자 테스트 응답을 제출하는 웹 페이지의 경우, 다음 중 하나 이상 지원해야 합니다.
 
@@ -662,7 +756,7 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
 
 ![](https://github.com/minsoftk/TIL/blob/master/blog/stocksell.png?raw=true)
 
-#### 3.3.5 도움말
+#### 3.3.5 Help
 
 상황에 맞는 도움말을 제공합니다. 사용자가 실수를 하지 않도록 돕는 것입니다. 장애가 있는 일부 사용자는 장애가 없는 사용자보다 실수할 가능성이 더 높을 수 있습니다. 상황에 맞는 도움말을 사용하여 사용자는 수행 중인 작업을 추적하지 않고 작업을 수행하는 방법을 찾습니다.
 
@@ -676,7 +770,7 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
 
 ![알바천국 이력서 등록](https://github.com/minsoftk/TIL/blob/master/blog/3.3.5.png?raw=true)
 
-#### 3.3.6 오류 예방: 공통
+#### 3.3.6 Error Prevention( All )
 
 `3.3.4`와 비슷한 맥락입니다. 장애가 있는 사용자는 실수할 가능성이 더 높고 실수를 감지하거나 복구하는 데 더 어려울 수 있습니다. 읽기 장애가 있는 사람은 숫자와 문자를 바꿀 수 있고, 운동 장애가 있는 사람은 실수로 키를 칠 수 있습니다. 작업을 되돌리는 기능을 제공하면 사용자가 실수를 수정할 수 있습니다. 정보를 검토하고 수정할 수 있는 기능을 제공하면 사용자가 조치를 취하기 전에 실수를 감지할 수 있습니다.
 
@@ -701,6 +795,9 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
 
   ![나가기 확인 알림창](https://github.com/minsoftk/TIL/blob/master/blog/3.3.6.png?raw=true)
 
+<br/>
+<br/>
+
 ## 4. Robust
 
 ### 4.1 Compatible
@@ -722,6 +819,8 @@ HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 각 요소는 �
 <input title=Enter name here type=text>
 ```
 
+<br/>
+
 #### 4.1.2 Name, Role, Value
 
 모든 UI 컴포넌트(폼 요소, 링크 및 사용자 정의 컴포넌트 등)는 이름(name)과 역할(role)을 프로그래밍 방식으로 설정할 수 있습니다. 상태(state), 속성(properties) 및 값(value) 또한 프로그래밍 방식으로 설정할 수 있습니다. 이러한 설정 사항은 보조 기술을 포함한 사용자 에이전트에서 활용됩니다.
@@ -741,6 +840,8 @@ img는 button으로 사용되는데 이 경우 역할(role)이 잘못되었고 �
 ```
 
 올바른 역할(role)이 사용되었고 input요소가 button type을 갖고 유일한 name이 요소에게 주어졌다. 이러한 방식으로 화면 판독기는 사용자에게 요소가 실제로 버튼임을 전달하며, 이는 사용자가 버튼을 클릭해야 할 수 있음을 쉽게 알 수 있게 한다.
+
+<br/>
 
 #### 4.1.3 Status Messages
 
