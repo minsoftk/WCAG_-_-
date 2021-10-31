@@ -216,11 +216,11 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 [https://www.coupang.com/](https://www.coupang.com/)
 콘텐츠의 중요성은 이미지 보다는 h1태그를 사용하여 텍스트로 제목임을 나타내야 합니다.
 
-## 2.4 Navigable(탐색가능)
+### 2.4 Navigable(탐색가능)
 
 사용자가 탐색하고, 콘텐츠를 찾고, 어디에 있는지 판단 할 수있는 방법을 제공해야 합니다.
 
-### 2.4.1 Bypass Blocks
+#### 2.4.1 Bypass Blocks
 
 반복되는 콘텐츠 블록을 건너 뛸 수 있는 기능을 제공해야 합니다.
 
@@ -230,7 +230,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 - screen-reader 사용자 : 메인 뉴스 부분에 도달할 때 까지 많은 수의 단어를 들어야 합니다.
 - 화면 확대기 사용자 : 웹사이트의 상단부터 메인 뉴스 부분에 도달할 때 까지 화면을 내려서 찾아봐야 합니다.
 
-### 2.4.2 Page Titled
+#### 2.4.2 Page Titled
 
 웹 페이지는 주제나 목적을 설명하는 적절한 제목이 제공되어야 합니다.
 
@@ -240,7 +240,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 - screen-reader 사용자 : 이 웹사이트가 어떤 주제나 목적을 가지고 있는 사이트인지 title이 없기 때문에 알기 어렵다.
 
-### 2.4.3 Focus Order
+#### 2.4.3 Focus Order
 
 웹 페이지를 순차적으로 탐색 할 수 있고 탐색 순서가 의미 또는 작업에 영향을 주는 경우, 포커스 가능 컴포넌트는 의미와 작동 가능성을 유지하는 순서로 포커스를 받아야 합니다.
 
@@ -252,7 +252,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 - 실패 예시 : 이메일 input 포커스 -> 회원가입 button 포커스 -> 비밀번호 input 포커스 (작동 가능성 유지 ❌)
 
-### 2.4.4 Link Purpose (In Context)
+#### 2.4.4 Link Purpose (In Context)
 
 각 링크의 목적은 링크 텍스트 만으로 또는 링크 텍스트와 프로그래밍 방식으로 결정된 링크 컨텍스트와 함께 결정될 수 있어야 합니다.
 
@@ -260,7 +260,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ![](https://images.velog.io/images/ywc8851/post/05435882-b686-4bf6-b181-613410627818/image.png)
 
-### 2.4.5 Multiple Ways
+#### 2.4.5 Multiple Ways
 
 웹 페이지가 프로세스의 결과 또는 단계인 경우를 제외하고 웹 페이지 집합 내에서 웹 페이지를 찾을 수 있는 방법은 여러 가지 방법으로 제공 되어야 합니다.
 
@@ -268,7 +268,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ❗ 쇼핑몰과 같은 결제가 필요한 과정에서 로고를 클릭시 페이지의 이동이 안되는 경우는 프로세스의 결과 또는 단계인 경우이기 때문에 개발자가 의도적으로 a태그를 사용하지 않은 것으로 볼 수 있습니다.
 
-### 2.4.6 Headings and Labels
+#### 2.4.6 Headings and Labels
 
 제목, 레이블은 적절한 주제 및 목적을 설명해야 합니다.
 
@@ -277,7 +277,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 ![](https://images.velog.io/images/ywc8851/post/9add0644-8b88-4f12-9b22-69f4cfca9fa0/image.png)
 로그인 Form은 사용자의 회원 아이디와 비밀번호를 묻습니다. ID과 비밀번호를 묻는 두 개의 입력 필드로 구성됩니다. 따라서 사용자가 어떠한 정보를 입력해야 되는지 알 수 있습니다.
 
-### 2.4.7 Focus Visible
+#### 2.4.7 Focus Visible
 
 키보드로 조작 가능한 UI는 키보드 포커스 상태가 화면에 표시되어야 합니다.
 
@@ -294,7 +294,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 }
 ```
 
-### 2.4.8 Location
+#### 2.4.8 Location
 
 일련의 웹 페이지에서 사용자 위치에 대한 정보를 이용 가능해야 합니다.
 
@@ -302,11 +302,11 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ![](https://images.velog.io/images/ywc8851/post/a3393133-7f0d-4141-b8cd-f7612316edb4/image.png)
 
-### 2.4.9 Link Purpose (Link Only)
+#### 2.4.9 Link Purpose (Link Only)
 
 링크의 목적이 일반적인 사용자에게 모호한 경우를 제외하고 링크 텍스트만으로 각 링크의 목적을 식별 할 수 있는 방법을 제공해야 합니다.
 
-### 2.4.10 Section Headings
+#### 2.4.10 Section Headings
 
 섹션 제목은 콘텐츠를 구성하는데 사용됩니다.
 
@@ -332,11 +332,11 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 ... search results are returned in this section ...
 ```
 
-## 2.5 Input Modalities(입력 양식)
+### 2.5 Input Modalities(입력 양식)
 
 키보드가 아닌 다양한 입력을 통해 기능을 보다 쉽게 조작 할 수 있도록 만들어야 합니다.
 
-### 2.5.1 Pointer Gestures
+#### 2.5.1 Pointer Gestures
 
 멀티 포인트 또는 패스 기반 제스처(gesture)를 사용하는 모든 기능은 멀티 포인트 또는 패스 기반 제스처가 필수적인 경우가 아니면 패스 기반 제스처 없이 싱글 포인터로 작동 할 수 있어야 합니다.
 
@@ -352,7 +352,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 - 위에선 존재하지 않았던 대체하는 수단을 제공한다.
 
-### 2.5.2 Pointer Cancellation
+#### 2.5.2 Pointer Cancellation
 
 싱글 포인터를 사용하여 작동할 수 있는 기능의 경우 이 지침은 실수로 잘못된 위치를 만지거나 클릭 할 수 있는 손 떨림, 운동 장애가 있는 사람들을 돕습니다. 실수로 인해 의도하지 않은 동작이 발생했을 때 취소할 수 있는 기능을 제공합니다.
 
@@ -363,7 +363,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 - up 이벤트를 통한 취소(Reversal)
   사용자가 잘못된 위치를 터치 했을 때, 손가락이나 포인터를 들어 올리기 전에 손가락이나 포인터를 그 위치에서 벗어나게 하여 의도하지 않은 작업을 취소할 수 있습니다.
 
-### 2.5.3 Label in Name
+#### 2.5.3 Label in Name
 
 텍스트 또는 이미지 텍스트를 포함하는 레이블이 있는 UI 컴포넌트의 경우, 이름에 시각적으로 표시되는 텍스트가 포함되어야 합니다.
 
@@ -380,14 +380,14 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 <label for="notification">Notify me of delays</label>
 ```
 
-### 2.5.4 Motion Actuation
+#### 2.5.4 Motion Actuation
 
 필수적으로 동작(모션)이 작동을 위해 1필요한 경우가 아니라면 동작에 의존하지 않는 것이 좋습니다만, 동작을 통한 기능 수행이 필요한 경우 대체 인터페이스를 제공하고, 해당 기능을 끌 수 있도록 해야 합니다.
 
 - 동작(모션) 실행 기능에 대한 대체 인터페이스를 제공해야 합니다.
 - 사용자가 동작(모션) 실행 기능을 끌 수 있도록 해야 합니다.
 
-### 2.5.5 Target Size
+#### 2.5.5 Target Size
 
 포인터 또는 터치에 의한 실행 영역은 44×44 CSS 픽셀 이상이어야 합니다. 44×44 CSS 픽셀 크기는 일반적으로 모바일 장치의 9mm 크기에 해당합니다. 이 크기는 대부분의 사람들이 손가락이나 다른 포인팅 장치를 사용하여 보고 터치할 수 있을 만큼 충분히 큽니다.
 ![](https://images.velog.io/images/ywc8851/post/e46b3d9e-2a79-4a16-bfb4-276e87c1dfad/image.png)
@@ -398,7 +398,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ![](https://images.velog.io/images/ywc8851/post/05aa7e67-cce5-4330-a94b-010071c2a42f/image.png)
 
-### 2.5.6 Concurrent Input Mechanisms
+#### 2.5.6 Concurrent Input Mechanisms
 
 웹 콘텐츠는 제한이 필수적인 경우, 예를 들면 콘텐츠 보안 보장 또는 사용자 설정을 침해하면 안되는 경우를 제외하고 플랫폼에서 사용할 수 있는 입력 방식을 제한하지 않습니다.
 
@@ -701,13 +701,13 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
 
   ![나가기 확인 알림창](https://github.com/minsoftk/TIL/blob/master/blog/3.3.6.png?raw=true)
 
-# 4. Robust
+## 4. Robust
 
-## 4.1 Compatible
+### 4.1 Compatible
 
 보조 기술을 포함하여 현재, 미래의 도구와 호환성을 높여야 합니다.
 
-### 4.1.1 Parsing
+#### 4.1.1 Parsing
 
 HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 각 요소는 시작 및 종료 태그가 일치해야 하고, 표준 기술 사양에 따라 중첩 되며, 중복된 속성을 가져서는 안되며, 모든 id 속성 값은 문서에서 유일해야 합니다.
 
@@ -722,7 +722,7 @@ HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 각 요소는 �
 <input title=Enter name here type=text>
 ```
 
-### 4.1.2 Name, Role, Value
+#### 4.1.2 Name, Role, Value
 
 모든 UI 컴포넌트(폼 요소, 링크 및 사용자 정의 컴포넌트 등)는 이름(name)과 역할(role)을 프로그래밍 방식으로 설정할 수 있습니다. 상태(state), 속성(properties) 및 값(value) 또한 프로그래밍 방식으로 설정할 수 있습니다. 이러한 설정 사항은 보조 기술을 포함한 사용자 에이전트에서 활용됩니다.
 
@@ -742,7 +742,7 @@ img는 button으로 사용되는데 이 경우 역할(role)이 잘못되었고 �
 
 올바른 역할(role)이 사용되었고 input요소가 button type을 갖고 유일한 name이 요소에게 주어졌다. 이러한 방식으로 화면 판독기는 사용자에게 요소가 실제로 버튼임을 전달하며, 이는 사용자가 버튼을 클릭해야 할 수 있음을 쉽게 알 수 있게 한다.
 
-### 4.1.3 Status Messages
+#### 4.1.3 Status Messages
 
 HTML 마크업 언어를 사용하여 구현된 상태 메시지는 프로그래밍 방식으로 역할 또는 속성을 설정 함으로서, 포커스 상태가 아니어도 보조 기술에 의해 사용자에게 표시되거나 읽힐 수 있습니다. 스크린리더 사용자는 상태 메시지를 듣습니다. 화면을 확대해서 보는 사람들은 화면에 보이지 않는 메시지에 대해 알 수 있습니다. 인지 장애가 있는 사용자는 깜빡 이거나, 말하는상태 메시지를 통해 주의를 기울일 수 있습니다.
 
