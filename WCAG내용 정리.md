@@ -156,7 +156,9 @@
 #### 1.3.3 Sensory Characteristics
 
 콘텐츠를 이해하고 조작하기 위해 제공된 가이드라인은 모양, 색, 크기, 시각적 위치, 방향 또는 소리와 같은 컴포넌트의 감각적인 특성에만 의존하지 않습니다.
+
 ![](https://images.velog.io/images/luna238/post/0cb7a8c3-65de-47a1-b9c2-b9619294d85f/image.png)
+
 텍스트 문구를 제외한 앞의 모양만 있다면 의사 전달이 명확하게 되지 않을 수 있기 때문에, 감각적인 특성 외에 별도의 정보를 제공해주는 것이 바람직합니다.
 
 <br/>
@@ -226,6 +228,7 @@ HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 UI 컴포넌트,
 #### 1.4.2 Audio Control
 
 3초 이상 자동으로 웹 페이지가 오디오를 출력한다면, 오디오 재생을 일시정지 하거나 멈추게 하는 기능 또는 오디오 볼륨을 조절할 수 있는 기능을 제공해야 합니다.
+
 ![](https://images.velog.io/images/luna238/post/f70914ea-2c74-42c2-bd35-c778dbbf7133/image.png)
 
 <br/>
@@ -248,6 +251,7 @@ HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 UI 컴포넌트,
 캡션 및 이미지 텍스트를 제외하고, 텍스트는 콘텐츠와 기능의 손실없이 200% 이상 보조기술 없이 크기 조정이 가능해야 합니다.
 
 - 시력이 낮은 사람들이 읽을 수 있도록 콘텐츠의 텍스트 크기를 늘릴 수 있도록 해야 합니다.
+
   ![](https://images.velog.io/images/luna238/post/0f62887d-198a-4104-b281-9a265796ac55/image.png)
 
   ![](https://images.velog.io/images/luna238/post/6ba88b75-f0ee-4981-b0ef-5424b020883a/image.png)
@@ -334,8 +338,11 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
   특정 그래픽 표현이 전달되는 정보에 필수적인 경우를 제외하고 콘텐츠를 이해하는데 필요한 그래픽의 일부.
 
 👎
+
 ![](https://images.velog.io/images/luna238/post/cf0ccab9-1fd0-4de5-a026-e36bbc71b221/image.png)
+
 👍
+
 ![](https://images.velog.io/images/luna238/post/bbba43f0-65c0-4dcf-9280-44550e2314df/image.png)
 
 시력이 약한 사람들은 색의 대비가 부족할 때 식별에 어려움을 겪기 때문에, 비텍스트의 경우 최소 3:1 이상의 명도대비를 유지해야 합니다. 위의 사진은 텍스트가 잘 식별되지 않습니다.
