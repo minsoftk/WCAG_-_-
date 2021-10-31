@@ -2,6 +2,220 @@
 
 > Web Content Accessibility Guidelines의 약자로 W3C 웹 콘텐츠 접근성 가이드라인 표준 권고안은 웹 사이트/애플리케이션에서 **충족해야 하는 기준을 정의**하여 **장애가 있는 사용자가 보다 쉽게 이용할 수 있도록 준수해야 하는 지침**으로, 웹 서비스를 제작하는 사람들이 기획/디자인/개발 과정에서 고려해야 할 요구사항입니다.
 
+## 1. Perceivable
+
+정보와 UI컴포넌트는 반드시 사용자들이 인지할 수 있게 제공 가능 해야 합니다.
+
+### 1.1 Text Alternatives
+
+텍스트가 아닌 콘텐츠에 대한 대체 텍스트를 제공하여 사람들이 필요로 하는 큰 인쇄물, 점자, 음성, 기호 또는 간단한 언어의 다른 형태로 제공될 수 있습니다.
+
+#### 1.1.1 Non-text Content
+
+아래 리스트에 있는 것들을 제외한 모든 텍스트가 아닌 콘텐츠들은 사용자들에게 동등한 목적의 대체 텍스트를 제공해야 합니다.
+
+- Controls, Input
+  텍스트가 아닌 콘텐츠가 사용자의 입력을 허용하거나 컨트롤 한다면, 이 목적을 설명하는 이름이 있어야 합니다. (ex: 입력 폼 이름)
+
+- Time-Based Media
+  텍스트가 아닌 콘텐츠가 시간 기반의 미디어라면 대체 텍스트는 적어도 텍스트가 아닌 콘텐츠의 정체성을 설명할 수 있어야 합니다. (ex: 자막, 수화)
+
+- Test
+  텍스트가 아닌 콘텐츠가 유효하지 않은 것이 표시되도록 테스트 될 때 사용 되는 표시 텍스트일 경우, 콘텐츠를 설명하는 대체 텍스트를 제공해야 합니다. (ex: 이미지)
+
+- Sensory
+  텍스트가 아닌 콘텐츠가 특정한 감각적 경험의 산물이라면, 최소한 설명 가능한 대체 텍스트를 제공해야 합니다. (ex: 예술 작품)
+
+- CAPTCHA
+  텍스트가 아닌 콘텐츠의 사용 목적이 컴퓨터가 아닌 사람에 의한 접근을 확인하는 것이라면 목적을 정의하고 서술하는 적절한 대체 텍스트를 제공하고, 장애를 극복할 수 있는 다른 형태의 CAPTCHA를 제공해야 합니다.
+
+- Decoration, Formatting, Invisible
+  텍스트가 아닌 콘텐츠가 순수한 장식 이거나, 시각적으로만 사용 되었거나, 사용자에게 보이지 않는다면 보조기술에서 이를 읽지 않고 무시하도록 처리해야 합니다.
+
+### 1.2 Time-based Media
+
+시간 기반 미디어의 대체 수단을 제공해야 합니다.
+
+#### 1.2.1 Audio-only and Video-only (Prerecorded)
+
+사전에 녹음된 오디오, 녹화된 비디오 미디어는 콘텐츠를 기술하는 적절한 대체 수단을 제공해야 합니다.
+![](https://images.velog.io/images/luna238/post/ae7d5c47-974d-42b0-861c-bc8e13816876/image.png)
+👎 녹화된 비디오 미디어 콘텐츠에 대한 대체 텍스트가 없어서, 미디어를 재생할 수 없는 경우 내용을 확인하기 어렵습니다. `data-meta-title`에 있는 콘텐츠에 대한 설명을 보여주는 대체 텍스트가 필요합니다.  
+[https://www.pexels.com/ko-kr/](https://www.pexels.com/ko-kr/)
+
+#### 1.2.2 Captions (Prerecorded)
+
+자막은 동기화 된 미디어의 미리 녹음된 모든 오디오 컨텐츠에 제공되어야 합니다.
+![](https://images.velog.io/images/luna238/post/ade50f0f-4da3-4615-a079-4ef59cae2e7f/image.png)
+
+👎 오디오 컨텐츠 외에 별도의 자막이 존재하지 않아, 오디오를 듣기 힘든 환경에서 내용을 확인할 수 없습니다.
+[https://audiojungle.net/search?sort=rating](https://audiojungle.net/search?sort=rating)
+
+#### 1.2.3 Audio Description or Media Alternative
+
+시간 기반 미디어 대체물 또는 오디오 설명을 포함하는 비디오 컨텐츠를 제외하고는 텍스트 대체 수단이 필요합니다.
+
+![](https://images.velog.io/images/luna238/post/2deb70a1-87b5-4cdb-9717-8e2ed1d4f912/image.png)
+![](https://images.velog.io/images/luna238/post/e50b6fc5-e074-42a6-a051-1aec4a10e47b/image.png)
+👍 오디오의 내용에 대해 설명해주는 대체 텍스트가 존재합니다. 오디오를 재생하지 않아도 오디오 내용에 대해 예상할 수 있습니다.
+[https://www.bensound.com/](https://www.bensound.com/)
+
+#### 1.2.4 Captions (Live)
+
+생방송 미디어에 실시간으로 제공되는 오디오 콘테츠에 대한 자막이 제공되어야 합니다.
+![](https://images.velog.io/images/luna238/post/78c775a0-c67e-4168-a1e5-4de4b8be8cc8/image.png)
+
+👎 실시간 오디오 콘텐츠에 대한 자막이 제공되지 않습니다. 오디오 재생이 힘든 환경에서는 콘텐츠에 대한 내용을 확인할 수 없습니다.
+[https://www.youtube.com/watch?v=36YnV9STBqc](https://www.youtube.com/watch?v=36YnV9STBqc)
+
+#### 1.2.5 Audio Description (Prerecorded)
+
+오디오 설명은 사전 녹화된 비디오 콘텐츠에 제공되어야 합니다.
+
+👍 비디오 콘텐츠에 대한 세부 내용을 오디오로 설명해주고 있습니다. 영상을 시청하는에 어려움을 겪는 사람들에게 시각적인 정보를 전달해 줄 수 있습니다.
+[https://www.youtube.com/watch?v=BfGYV7dHIbY&list=UURZkbmj75un6xMQo6mjUWyA&index=4](https://www.youtube.com/watch?v=BfGYV7dHIbY&list=UURZkbmj75un6xMQo6mjUWyA&index=4)
+
+#### 1.2.6 Sign Language (Prerecorded)
+
+수화 통역은 사전 녹음된 모든 오디오 콘텐츠에 제공되어야 합니다.
+
+- 자막을 읽기 힘든 주 언어가 수환인 사람들에게도 오디오 콘텐츠에 대한 정보를 제공해 줄 수 있어야 합니다.
+
+#### 1.2.7 Extended Audio Description (Prerecorded)
+
+오디오 설명이 충분하지 않다고 판단될 경우, 보다 확장된 오디오 설명이 제공되어야 합니다.
+
+- 시각 장애인, 화면을 볼 수 없는 저시력자, 시각 정보를 시각적으로 해석하는 데 어려움이 있는 인지 장애가 있는 사람들은 종종 시각 정보의 음성 설명을 사용합니다. 그런데 설명에 비해 대사가 너무 많으면 전달력이 부족할 수 있습니다. 이 때 확장된 오디오 설명으로 비디오를 이해하는 데 필요한 추가 정보를 제공할 수 있어야 합니다.
+
+#### 1.2.8 Media Alternative (Prerecorded)
+
+사전 녹음, 녹화된 미디어 콘텐츠는 적절한 대체 수단이 제공되어야 합니다.
+
+- 잘 보지 못하거나, 듣지 못하는 사람들에게도 영상과 음성에 대한 정보에 접근성을 제공해 줄 수 있어야 합니다.
+
+#### 1.2.9 Audio-only (Live)
+
+실시간 오디오 전용 콘텐츠에 대해 동등한 정보를 제공하는 대체 수단이 요구됩니다.
+
+- 시각장애인이거나 시력이 낮은 사람뿐만 아니라 인지적 한계가 있는 사람도 시각 정보의 음성 설명에서 이익을 얻을 수 있어야 합니다.
+
+### 1.3 Adaptable
+
+정보나 구조를 잃지 않고 다양한 방식(ex: 간단한 레이아웃)으로 표현할 수있는 컨텐츠를 만듭니다.
+
+#### 1.3.1 Info and Relationships
+
+표현을 통해 전달되는 정보, 구조 및 관계는 프로그래밍 방식으로 결정되거나 텍스트로 제공됩니다.
+
+- 표시 형식이 변경될 때 시각 또는 청각 형식에 의해 암시되는 정보가 유지되도록 하는 것입니다.
+- 스크린 리더를 사용하는 시각장애인 사용자는 색상을 통해 전달되는 정보를 텍스트로 이용할 수 있으면 정보에 대해 더 접근할 수 있습니다.
+
+#### 1.3.2 Meaningful Sequence
+
+콘텐츠가 제시되는 순서가 의미에 영향을 줄 때, 올바른 판독 순서가 프로그래밍 방식으로 결정될 수 있습니다.
+
+![](https://images.velog.io/images/luna238/post/a708f5a2-7aa6-4fad-b961-54d2ace47522/image.png)
+![](https://images.velog.io/images/luna238/post/19d7c7d4-f44c-4c47-90d7-fb4be93bb490/image.png)
+[https://www.naver.com](https://www.naver.com)
+네이버 이미지보다 우측 상단의 다른 콘텐츠가 먼저 존재하지만, html구조에서는 네이버 로고가 앞서있으므로 콘텐츠에 의미 있는 순서를 제공할 수 있습니다.
+
+#### 1.3.3 Sensory Characteristics
+
+콘텐츠를 이해하고 조작하기 위해 제공된 가이드라인은 모양, 색, 크기, 시각적 위치, 방향 또는 소리와 같은 컴포넌트의 감각적인 특성에만 의존하지 않습니다.
+![](https://images.velog.io/images/luna238/post/0cb7a8c3-65de-47a1-b9c2-b9619294d85f/image.png)
+텍스트 문구를 제외한 앞의 모양만 있다면 의사 전달이 명확하게 되지 않을 수 있기 때문에, 감각적인 특성 외에 별도의 정보를 제공해주는 것이 바람직합니다.
+
+#### 1.3.4 Orientation
+
+특정 디스플레이 방향이 필수적 이지 않은 한, 콘텐츠는 보기 및 작동을 세로 또는 가로. 한 방향으로 제한 하지 않습니다.
+
+![](https://images.velog.io/images/luna238/post/14655457-e460-4a69-abc0-647a07bdb6d8/KakaoTalk_20211031_195718640.jpg)
+
+<center>세로</center>
+
+![](https://images.velog.io/images/luna238/post/849a4015-d878-41c7-a131-aeb511983d1d/KakaoTalk_20211031_195718640_01.jpg)
+
+<center>가로</center>
+
+[https://www.facebook.com](https://www.facebook.com)
+콘텐츠는 방향을 변경했을 때 고정된 뷰포트가 아닌 화면의 회전 방향에 따라 변경된 뷰포트를 보여줌으로써, 화면 방향이 제약된 상황에서도 불편하지 않게 사용할 수 있어야 합니다.
+
+#### 1.3.5 Identify Input Purpose
+
+사용자에 관한 정보를 수집하는 각 입력 필드의 목적은 다음과 같은 경우에 프로그래밍 방식으로 결정될 수 있습니다. 이 지침을 준수하면 인지 장애가 있는 사용자가 텍스트를 읽고 입력하는 것이 쉬워져 접근성을 향상 시킵니다. 또한 웹 사이트의 언어를 잘 모르는 사용자 또한 접근성이 향상됩니다.
+
+- 메타 데이터를 첨부함으로써 사용자의 입력을 도와줄 수 있습니다. 이름 및 이메일 주소와 같은 입력을 자동완성 할 수 있게 구성할 수 있고, 브라우저가 이전 입력에서 저장한 정보와 양식 필드에서 자동 완성을 허용하는 브라우저 기능의 조합으로 작동합니다.
+
+![](https://images.velog.io/images/luna238/post/199bfcee-633f-48b7-8a4d-b550f913d98b/image.png)
+
+[https://account.booking.com/](https://account.booking.com/)
+html코드 상으로는 input태그에 autocomplete 속성의 값을 추가하면 됩니다.
+
+#### 1.3.6 Identify Purpose
+
+HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 UI 컴포넌트, 아이콘 및 영역의 목적을 프로그래밍 방식으로 결정할 수 있습니다.
+
+- 스크린리더와 같은 보조기술 사용자도 같은 작업을 수행하여 접근성을 향상시킬 수 있도록 대체 텍스트를 제공해야 합니다.
+- 사용자가 쉽게 탐색할 수 있도록 영역을 명확히 구분할 수 있도록 해야 합니다.
+  ![](https://images.velog.io/images/luna238/post/95e08a2b-04f5-48b6-ae8e-a93687410847/image.png)
+  ![](https://images.velog.io/images/luna238/post/ef7c6349-0f6e-4eb4-b673-bced27bdcefe/image.png)
+  [https://www.airbnb.co.kr](https://www.airbnb.co.kr)
+
+### 1.4 Distinguishable
+
+사용자가 콘텐츠를 보고 들을 수 있도록 명확하게 구분할 수 있어야 합니다.
+
+#### 1.4.1 Use of Color
+
+색상 만으로 정보 전달, 행동 지시, 반응 유발, 시각적 요소를 식별하는 시각적인 용도로 사용하면 안됩니다.
+
+![](https://images.velog.io/images/luna238/post/1e402969-b75f-4d5a-b81c-f10d61f3b9bf/image.png)
+
+[https://www.gap.co.kr](https://www.gap.co.kr)
+`GAP`은 색상과 함께 텍스트를 함께 제공하여 색상의 구분이 어려운 환경에서도 충분한 정보를 제공하고 있습니다.
+
+#### 1.4.2 Audio Control
+
+3초 이상 자동으로 웹 페이지가 오디오를 출력한다면, 오디오 재생을 일시정지 하거나 멈추게 하는 기능 또는 오디오 볼륨을 조절할 수 있는 기능을 제공해야 합니다.
+![](https://images.velog.io/images/luna238/post/f70914ea-2c74-42c2-bd35-c778dbbf7133/image.png)
+
+#### 1.4.3 Contrast (Minimum)
+
+텍스트 또는 이미지 텍스트의 시각적인 표현은 다음 예외사항을 제외하고 명도 대비 차는 최소 4.5:1이 되어야 합니다.
+
+- Large Text
+  24px 이상 또는 18px Bold 텍스트의 경우 3:1 명도 대비 차까지 허용합니다.
+- Incidental
+  비 활성화된 UI 컴포넌트 텍스트나 이미지의 텍스트, 순수한 표현 장식, 보이지 않는 콘텐츠, 중요한 다른 시각적인 콘텐츠를 포함하는 그림은 별도의 명도 대비 요구가 없습니다.
+- Logotypes
+  로고나 브랜드의 텍스트는 최소한의 명도 대비 요구가 없습니다.
+
+#### 1.4.4 Resize text
+
+캡션 및 이미지 텍스트를 제외하고, 텍스트는 콘텐츠와 기능의 손실없이 200% 이상 보조기술 없이 크기 조정이 가능해야 합니다.
+
+- 시력이 낮은 사람들이 읽을 수 있도록 콘텐츠의 텍스트 크기를 늘릴 수 있도록 해야 합니다.
+  ![](https://images.velog.io/images/luna238/post/0f62887d-198a-4104-b281-9a265796ac55/image.png)
+  ![](https://images.velog.io/images/luna238/post/6ba88b75-f0ee-4981-b0ef-5424b020883a/image.png)
+  [https://google.com/](https://google.com/)
+
+화면의 크기를 200%로 늘려도 손실없이 텍스트를 볼 수 있어야 합니다.
+
+#### 1.4.5 Images of Text
+
+시각적인 표현을 성취할 수 있는 기술들이 사용될 때, 텍스트는 다음을 제외하고 이미지의 텍스트 보다 많은 정보를 전달할 수 있어야 합니다.
+
+- Customizable
+  이미지 텍스트는 사용자의 요구에 따라 시각적으로 사용자가 조정 가능해야 합니다.
+- Essential
+  텍스트의 특정한 표현은 정보가 전달될 때 필수입니다.
+
+ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A logo containing text, Representation of a font family, A representation of a letter, Symbolic text characters, Customizable font settings in images of text
+
+![](https://images.velog.io/images/luna238/post/479cde35-9bef-41c8-8e5b-5aaddf5b6ea5/image.png)
+[https://www.coupang.com/](https://www.coupang.com/)
+콘텐츠의 중요성은 이미지 보다는 h1태그를 사용하여 텍스트로 제목임을 나타내야 합니다.
+
 ## 2.4 Navigable(탐색가능)
 
 사용자가 탐색하고, 콘텐츠를 찾고, 어디에 있는지 판단 할 수있는 방법을 제공해야 합니다.
@@ -73,10 +287,10 @@
 
 ```css
 :focus {
-	outline: 3px solid #aaa;
+  outline: 3px solid #aaa;
 }
 :focus-visible {
-	outline: 3px solid #aaa;
+  outline: 3px solid #aaa;
 }
 ```
 
@@ -102,17 +316,17 @@
 <h1>Search Technical Periodicals</h1>
 <h2>Search</h2>
 <form action="search.php">
-	<p>
-		<label for="searchInput">Enter search topic: </label>
-		<input type="text" size="30" id="searchInput" />
-		<input type="submit" value="Go" />
-	</p>
+  <p>
+    <label for="searchInput">Enter search topic: </label>
+    <input type="text" size="30" id="searchInput" />
+    <input type="submit" value="Go" />
+  </p>
 </form>
 <h2>Available Periodicals</h2>
 <div class="jlinks">
-	<a href="pcoder.com">Professional Coder</a> |
-	<a href="algo.com">Algorithms</a> |
-	<a href="jse.com">Journal of Software Engineering</a>
+  <a href="pcoder.com">Professional Coder</a> |
+  <a href="algo.com">Algorithms</a> |
+  <a href="jse.com">Journal of Software Engineering</a>
 </div>
 <h2>Search Results</h2>
 ... search results are returned in this section ...
@@ -224,9 +438,9 @@
 
 ```html
 <html lang="ko">
-	...
-	<p>스크린 리더 테스트 <span lang="en"> car </span></p>
-	...
+  ...
+  <p>스크린 리더 테스트 <span lang="en"> car </span></p>
+  ...
 </html>
 ```
 
@@ -541,14 +755,14 @@ HTML 마크업 언어를 사용하여 구현된 상태 메시지는 프로그래
 
 ```html
 <p role="status" aria-live="off">
-	이 텍스트가 업데이트 되어도 스크린리더 사용자에게 아무런 안내를 하지 않습니다.
+  이 텍스트가 업데이트 되어도 스크린리더 사용자에게 아무런 안내를 하지 않습니다.
 </p>
 <p role="status" aria-live="polite">
-	이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하지 않을 때 상태 메시지를
-	알려줍니다.
+  이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하지 않을 때 상태 메시지를
+  알려줍니다.
 </p>
 <p role="status" aria-live="assertive">
-	이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하든 즉시 상태 메시지를
-	알려줍니다.
+  이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하든 즉시 상태 메시지를
+  알려줍니다.
 </p>
 ```
