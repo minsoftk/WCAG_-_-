@@ -412,7 +412,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 이렇게 마우스로 조작 가능한 기능과 키보드로 조작 가능한 기능이 동일하도록 구현해야 한다.
 
-##### 올바른 사례
+##### 예시
 
 키보드 tab키로 네비게이션 리스트를 선택하고 있다.
 
@@ -458,7 +458,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ![image](https://user-images.githubusercontent.com/58136073/139581075-ffc092cb-135e-4643-88be-14fbbaa06197.png)
 
-##### 주의해야할 점
+##### 🛑주의해야할 점
 
 음성 입력 사용자들이 단축키를 사용할 때 문제가 생길지도 모른다.
 
@@ -502,10 +502,12 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 콘텐츠의 정보가 자동 재생, 5초 이상 유지, 다른 콘텐츠와 동시에 움직인다면 사용자를 위하여 일시정지, 중지, 감추기 기능을 제공해야 한다.
 
-##### 예
+##### 예시
 
 네이버의 웹 접근성에서는 일시정지 지침이 정해져있다.
 ![image](https://user-images.githubusercontent.com/58136073/139581530-f9621656-fa4c-49b5-bf65-656ca3ba4462.png)
+
+<br/>
 
 제로베이스 메인 화면의 자동 재생 슬라이드 부분을 사용자가 정지시킬 수 있게 UI가 제공되었다.
 ![image](https://user-images.githubusercontent.com/58136073/139581935-b997e911-e4ac-4ef7-b2d9-469a69ebff8f.png)
@@ -515,7 +517,12 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 #### 2.2.3 No Timing
 
 타이밍은 인터랙션이 없는 동기화 미디어와 실시간 이벤트를 제외하고, 콘텐츠에 의해 제공되는 이벤트 또는 액션의 필수적인 부분이 아니다.  
-저시력, 인지장애, 운동장애 등을 가진 사람들이 시간에 따른 상호 작용이 필요한 콘텐츠의 발생을 최소화해야한다.
+저시력, 인지장애, 운동장애 등을 가진 사람들이 시간에 따른 상호 작용이 필요한 콘텐츠의 발생을 최소화해야한다.   
+   
+> 실시간 이벤트란?   
+> 온라인 경매, 라이브 공연의 웹캐스트처럼 시청과 동시에 이벤트가 발생하는 것이다.   
+> 
+> ![image](https://user-images.githubusercontent.com/58136073/139585645-24ef9291-a88d-43c2-b43e-2387af5a6908.png)     
 
 <br/>
 
@@ -542,6 +549,17 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 #### 2.2.6 Timeouts
 
 사용자가 아무런 행동을 취하지 않고 있을때, 데이터를 20시간이상 보존할 수 없는 공급자는 사용자에게 데이터 손실할 수 있는 시간 제한에 대해 경고해야한다.
+사용자가 사이트를 떠나거나 브라우저 창을 닫으면 타이머를 중단해야한다.    
+   
+##### 예시
+
+아래 이미지는 인지장애, 고령자 등을 고려하여 시간 연장 기능을 제공하고 있다.  
+![image](https://user-images.githubusercontent.com/58136073/139585204-5f4cc783-c45a-4acb-aed0-1bfbc8e12e29.png)  
+
+<br/>
+
+그와 반대로 아래 이미지는 인지장애, 고령자 등을 고려하지 않은 UI이다.  
+![image](https://user-images.githubusercontent.com/58136073/139586243-a3d25bbd-738e-42c8-afd2-4201120db56f.png)     
 
 ---
 
@@ -555,11 +573,21 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 #### 2.3.1 Three Flashes or Below Threshold
 
+> 광과민성 발작  
+> : 오랜 시간 불규칙적으로 깜박거리는 광에 자극 받아 생기는 발작  
+
+광과민성 발작 장애가 있는 사람들을 위해 웹 페이지는 1초동안 3회 이상 깜박이거나 플래시가 빨간 임계값보다 낮게 구성하면 안된다.
+
+##### 예시
+1997년 일본에서 방영되었던 포켓몬스터를 보고 750명의 아이들이 발작을 일으켰던 사건이 있었다. 포켓몬스터의 어떤 장면을 보고 아이들이
+광과민성 발작 증상을 보였던 것이다.   
+[관련기사](https://news.mt.co.kr/mtview.php?no=2016121515265235919&outlink=1&ref=https%3A%2F%2Fsearch.naver.com)  
+![image](https://user-images.githubusercontent.com/58136073/139587942-ac294264-92ef-4564-8088-6969e0195ba4.png)   
+
 <br/>
 
 #### 2.3.2 Three Flashes
-
-웹 페이지는 1초 동안 3번 이상 깜박이는 콘텐츠를 포함해서는 안된다. 이 기준은 발작 가능성을 완전히 제거하는 것이 아닌, 최소한으로 줄이는 것이다.
+웹 페이지는 1초 동안 3번 이상 깜박이는 콘텐츠를 포함해서는 안된다. 이 기준은 발작 가능성을 완전히 제거하는 것이 아닌, 최소한으로 줄이는 것이다. 
 
 <br/>
 
