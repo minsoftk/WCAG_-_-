@@ -44,6 +44,7 @@
 
 사전에 녹음된 오디오, 녹화된 비디오 미디어는 콘텐츠를 기술하는 적절한 대체 수단을 제공해야 합니다.
 ![](https://images.velog.io/images/luna238/post/ae7d5c47-974d-42b0-861c-bc8e13816876/image.png)
+
 👎 녹화된 비디오 미디어 콘텐츠에 대한 대체 텍스트가 없어서, 미디어를 재생할 수 없는 경우 내용을 확인하기 어렵습니다. `data-meta-title`에 있는 콘텐츠에 대한 설명을 보여주는 대체 텍스트가 필요합니다.  
 [https://www.pexels.com/ko-kr/](https://www.pexels.com/ko-kr/)
 
@@ -64,7 +65,9 @@
 시간 기반 미디어 대체물 또는 오디오 설명을 포함하는 비디오 컨텐츠를 제외하고는 텍스트 대체 수단이 필요합니다.
 
 ![](https://images.velog.io/images/luna238/post/2deb70a1-87b5-4cdb-9717-8e2ed1d4f912/image.png)
+
 ![](https://images.velog.io/images/luna238/post/e50b6fc5-e074-42a6-a051-1aec4a10e47b/image.png)
+
 👍 오디오의 내용에 대해 설명해주는 대체 텍스트가 존재합니다. 오디오를 재생하지 않아도 오디오 내용에 대해 예상할 수 있습니다.
 [https://www.bensound.com/](https://www.bensound.com/)
 
@@ -142,7 +145,9 @@
 콘텐츠가 제시되는 순서가 의미에 영향을 줄 때, 올바른 판독 순서가 프로그래밍 방식으로 결정될 수 있습니다.
 
 ![](https://images.velog.io/images/luna238/post/a708f5a2-7aa6-4fad-b961-54d2ace47522/image.png)
+
 ![](https://images.velog.io/images/luna238/post/19d7c7d4-f44c-4c47-90d7-fb4be93bb490/image.png)
+
 [https://www.naver.com](https://www.naver.com)
 네이버 이미지보다 우측 상단의 다른 콘텐츠가 먼저 존재하지만, html구조에서는 네이버 로고가 앞서있으므로 콘텐츠에 의미 있는 순서를 제공할 수 있습니다.
 
@@ -193,7 +198,9 @@ HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 UI 컴포넌트,
 - 스크린리더와 같은 보조기술 사용자도 같은 작업을 수행하여 접근성을 향상시킬 수 있도록 대체 텍스트를 제공해야 합니다.
 - 사용자가 쉽게 탐색할 수 있도록 영역을 명확히 구분할 수 있도록 해야 합니다.
   ![](https://images.velog.io/images/luna238/post/95e08a2b-04f5-48b6-ae8e-a93687410847/image.png)
+
   ![](https://images.velog.io/images/luna238/post/ef7c6349-0f6e-4eb4-b673-bced27bdcefe/image.png)
+
   [https://www.airbnb.co.kr](https://www.airbnb.co.kr)
 
 <br/>
@@ -242,7 +249,9 @@ HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 UI 컴포넌트,
 
 - 시력이 낮은 사람들이 읽을 수 있도록 콘텐츠의 텍스트 크기를 늘릴 수 있도록 해야 합니다.
   ![](https://images.velog.io/images/luna238/post/0f62887d-198a-4104-b281-9a265796ac55/image.png)
+
   ![](https://images.velog.io/images/luna238/post/6ba88b75-f0ee-4981-b0ef-5424b020883a/image.png)
+
   [https://google.com/](https://google.com/)
 
 화면의 크기를 200%로 늘려도 손실없이 텍스트를 볼 수 있어야 합니다.
@@ -261,8 +270,115 @@ HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 UI 컴포넌트,
 ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A logo containing text, Representation of a font family, A representation of a letter, Symbolic text characters, Customizable font settings in images of text
 
 ![](https://images.velog.io/images/luna238/post/479cde35-9bef-41c8-8e5b-5aaddf5b6ea5/image.png)
+
 [https://www.coupang.com/](https://www.coupang.com/)
 콘텐츠의 중요성은 이미지 보다는 h1태그를 사용하여 텍스트로 제목임을 나타내야 합니다.
+
+#### 1.4.6 Contrast (Enhanced)
+
+텍스트 또는 이미지 텍스트의 시각적인 표현은 다음 예외사항을 제외하고 명도 대비 차는 적어도 7:1이 되어야 합니다. (1.4.3과 같지만 명도가 증가했습니다.)
+
+- Large Text
+  24px 이상 또는 18px Bold 텍스트의 경우 4.5:1 명도 대비 차까지 허용합니다.
+  <br/>
+
+#### 1.4.7 Low or No Background Audio
+
+일반 오디오(예: 사용자가 의도를 가지고 재생한 음성) 이거나, 오디오 CAPTCHA 또는 로고 송이 아니고, 노래 또는 랩과 같이 가사를 제공하는 음악 표현이 아닌, 사전 녹음된 오디오 전용 배겨음악 콘텐츠의 경우 다음 중 적어도 하나를 충족해야 합니다.
+
+- No Background
+  배경음악을 포함하지 않는 오디오입니다.
+- Turn Off
+  배경음악을 끌 수 있습니다.
+- 20 dB
+  배경음악의 데시벨 강도가 20dB 보다 작습니다.
+
+청각에 문제가 있는 사람들은 배경음악과 본문의 콘텐츠를 구분하기 힘들 수 있기 때문에, 명확히 구분할 수 있는 방법을 제공해야 합니다.
+<br/>
+
+#### 1.4.8 Visual Presentation
+
+텍스트 블록을 시각적으로 표현하기 위해 다음과 같은 메커니즘을 사용할 수 있습니다.
+
+1. 전경색과 배경색은 사용자가 선택할 수 있어야 합니다.
+2. 너비는 80 글자나 글리프 (CJK의 경우 40자)를 넘으면 안됩니다.
+3. 텍스트는 양쪽정렬이 아니어야 합니다. (왼쪽과 오른쪽 여백에 양 정렬 됨)
+4. 행간(단락 사이 간격)은 적어도 글자 높이의 1.5배 이상 되어야 합니다.
+5. 전체화면에서 콘텐츠를 읽거나, 기능을 사용하는데 문제가 없도록, 보조기술 없이 200% 확대 하더라도 가로 방향으로 스크롤이 생기면 안됩니다.
+   <br/>
+
+#### 1.4.9 Images of Text (No Exception)
+
+이미지 텍스트는 순수 장식용 또는 텍스트의 특정 표현이 전달되는 정보에 필수적인 경우에만 사용됩니다. `1.4.5`와 동일하지만 예외를 허용하지 않습니다.
+<br/>
+
+#### 1.4.10 Reflow
+
+콘텐츠는 정보나 기능의 손실없이 양 방향으로 스크롤하지 않도록 제공되어야 합니다.
+
+- 320px에 해당하는 너비의 수직 스크롤링 콘텐츠
+- 256px에 해당하는 높이의 수평 스크롤링 콘텐츠
+
+저시력 장애를 지닌 사용자는 브라우저를 확대 하거나 축소하여 사용하는데 이 때, 모든 콘텐츠에 접근 할 수 있어야 합니다.
+`프로그래머스`사이트의 경우, 400% 확대해도 가로 방향의 스크롤 바는 생기지 않고, 세로 스크롤바만을 이용해도 모든 정보에 접근 할 수 있습니다.
+[https://programmers.co.kr/](https://programmers.co.kr/)
+<br/>
+
+#### 1.4.11 Non-text Contrast
+
+다음의 시각적 표현은 인접한 색상 대비 명도대비가 최소 3:1이상 되어야 합니다.
+
+- User Interface Components
+  비 활성 컴포넌트 또는 컴포넌트 모양이 사용자 에이전트(예: 브라우저 등)에 의해 결정되고 개발자에 의해 수정되지 않는 경우를 제외하고, UI 컴포넌트 및 상태를 확인하기 위해 요구되는 시각적 정보.
+- Graphical Objects
+  특정 그래픽 표현이 전달되는 정보에 필수적인 경우를 제외하고 콘텐츠를 이해하는데 필요한 그래픽의 일부.
+
+👎
+![](https://images.velog.io/images/luna238/post/cf0ccab9-1fd0-4de5-a026-e36bbc71b221/image.png)
+👍
+![](https://images.velog.io/images/luna238/post/bbba43f0-65c0-4dcf-9280-44550e2314df/image.png)
+
+시력이 약한 사람들은 색의 대비가 부족할 때 식별에 어려움을 겪기 때문에, 비텍스트의 경우 최소 3:1 이상의 명도대비를 유지해야 합니다. 위의 사진은 텍스트가 잘 식별되지 않습니다.
+<br/>
+
+#### 1.4.12 Text Spacing
+
+다음 텍스트 스타일 속성을 지원하는 HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 다음 스타일을 모두 설정하고 다른 스타일 속성을 변경하지 않으면 콘텐츠 또는 기능이 손실되지 않습니다.
+
+- 행간(줄 사이 간격)은 글자 크기(높이)의 1.5배 이상 이어야 합니다.
+- 단락 간 간격은 글자 크기의 2배 이상으로 간격(마진)을 두어야 합니다.
+- 자간(글자 사이 간격)을 글자 크기의 0.12배 이상으로 설정합니다.
+- 어간(단어 사이 간격)은 글자 크기의 0.16배 이상으로 설정합니다.
+
+![](https://images.velog.io/images/luna238/post/cce31d2d-8d58-4783-8a0b-5f99e9e5c17a/image.png)
+
+![](https://images.velog.io/images/luna238/post/40ffa2a6-6f40-4bd6-9b07-8976a0060111/image.png)
+
+[https://news.naver.com](https://news.naver.com)
+
+해당 텍스트의 행간을 2배로 늘려보았는데 텍스트의 정보가 사라지지 않습니다. 텍스트를 감싸는 영역의 높이를 설정하지 않아야 텍스트 스타일을 사용자가 변경해도 정보에 대해 모두 접근할 수 있습니다.
+<br/>
+
+#### 1.4.13 Content on Hover or Focus
+
+마우스 포인터 호버(마우스 오버) 또는 키보드 포커스를 받은 다음 제거하면, 추가 내용이 화면에 표시되고 숨겨 지도록 실행되는데 다음 조건이 요구됩니다.
+
+- Dismissible
+  추가 콘텐츠(예: 툴팁)가 입력 오류를 전달하거나 다른 콘텐츠를 가리거나 교체하지 않는 한, 포인터 호버나 키보드 포커스를 이동하지 않고도 추가 콘텐츠를 닫을 수 있는 메커니즘을 제공해야 합니다.
+
+- Hoverable
+  포인터 호버로 인해 추가 콘텐츠가 화면에 표시된 경우, 추가 콘텐츠 위로 포인터를 이동해도 추가 콘텐츠는 지속적으로 표시되어야 합니다.
+
+- Persistent
+  추가 콘텐츠는 포인터 호버 또는 포커스 트리거를 제거하거나 사용자가 닫고자 하는 경우가 아니라면, 해당 정보는 지속적으로 화면에 표시되어야 합니다.
+
+사용자는 콘텐츠를 원하지 않는 상황에서 동작시킬 수 있고, 새로운 콘텐츠가 나타난줄 모를 수도 있고, 업무를 방해할 수도 있기 때문에 사용자가 제어할 수 있어야 합니다.
+
+![](https://images.velog.io/images/luna238/post/71cfdb4d-2c1d-493c-9fbe-b88c763eb44e/image.png)
+
+[https://www.op.gg/champion/maokai/statistics/support/build](https://www.op.gg/champion/maokai/statistics/support/build)
+
+해당 사이트는 마우스를 호버한 상태로 `esc` 및 다른 키보드로 툴팁을 닫을 수 없을 수 없으므로 해당 콘텐츠를 원하지 않는 사용자에게 불편함을 끼칠 수 있습니다.
 
 <br/>
 <br/>
@@ -550,10 +666,10 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ```css
 :focus {
-	outline: 3px solid #aaa;
+  outline: 3px solid #aaa;
 }
 :focus-visible {
-	outline: 3px solid #aaa;
+  outline: 3px solid #aaa;
 }
 ```
 
@@ -585,17 +701,17 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 <h1>Search Technical Periodicals</h1>
 <h2>Search</h2>
 <form action="search.php">
-	<p>
-		<label for="searchInput">Enter search topic: </label>
-		<input type="text" size="30" id="searchInput" />
-		<input type="submit" value="Go" />
-	</p>
+  <p>
+    <label for="searchInput">Enter search topic: </label>
+    <input type="text" size="30" id="searchInput" />
+    <input type="submit" value="Go" />
+  </p>
 </form>
 <h2>Available Periodicals</h2>
 <div class="jlinks">
-	<a href="pcoder.com">Professional Coder</a> |
-	<a href="algo.com">Algorithms</a> |
-	<a href="jse.com">Journal of Software Engineering</a>
+  <a href="pcoder.com">Professional Coder</a> |
+  <a href="algo.com">Algorithms</a> |
+  <a href="jse.com">Journal of Software Engineering</a>
 </div>
 <h2>Search Results</h2>
 ... search results are returned in this section ...
@@ -726,9 +842,9 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ```html
 <html lang="ko">
-	...
-	<p>스크린 리더 테스트 <span lang="en"> car </span></p>
-	...
+  ...
+  <p>스크린 리더 테스트 <span lang="en"> car </span></p>
+  ...
 </html>
 ```
 
@@ -1050,14 +1166,14 @@ HTML 마크업 언어를 사용하여 구현된 상태 메시지는 프로그래
 
 ```html
 <p role="status" aria-live="off">
-	이 텍스트가 업데이트 되어도 스크린리더 사용자에게 아무런 안내를 하지 않습니다.
+  이 텍스트가 업데이트 되어도 스크린리더 사용자에게 아무런 안내를 하지 않습니다.
 </p>
 <p role="status" aria-live="polite">
-	이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하지 않을 때 상태 메시지를
-	알려줍니다.
+  이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하지 않을 때 상태 메시지를
+  알려줍니다.
 </p>
 <p role="status" aria-live="assertive">
-	이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하든 즉시 상태 메시지를
-	알려줍니다.
+  이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하든 즉시 상태 메시지를
+  알려줍니다.
 </p>
 ```
