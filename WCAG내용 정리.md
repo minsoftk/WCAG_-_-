@@ -517,12 +517,12 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 #### 2.2.3 No Timing
 
 타이밍은 인터랙션이 없는 동기화 미디어와 실시간 이벤트를 제외하고, 콘텐츠에 의해 제공되는 이벤트 또는 액션의 필수적인 부분이 아니다.  
-저시력, 인지장애, 운동장애 등을 가진 사람들이 시간에 따른 상호 작용이 필요한 콘텐츠의 발생을 최소화해야한다.   
-   
-> 실시간 이벤트란?   
-> 온라인 경매, 라이브 공연의 웹캐스트처럼 시청과 동시에 이벤트가 발생하는 것이다.   
-> 
-> ![image](https://user-images.githubusercontent.com/58136073/139585645-24ef9291-a88d-43c2-b43e-2387af5a6908.png)     
+저시력, 인지장애, 운동장애 등을 가진 사람들이 시간에 따른 상호 작용이 필요한 콘텐츠의 발생을 최소화해야한다.
+
+> 실시간 이벤트란?  
+> 온라인 경매, 라이브 공연의 웹캐스트처럼 시청과 동시에 이벤트가 발생하는 것이다.
+>
+> ![image](https://user-images.githubusercontent.com/58136073/139585645-24ef9291-a88d-43c2-b43e-2387af5a6908.png)
 
 <br/>
 
@@ -549,17 +549,17 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 #### 2.2.6 Timeouts
 
 사용자가 아무런 행동을 취하지 않고 있을때, 데이터를 20시간이상 보존할 수 없는 공급자는 사용자에게 데이터 손실할 수 있는 시간 제한에 대해 경고해야한다.
-사용자가 사이트를 떠나거나 브라우저 창을 닫으면 타이머를 중단해야한다.    
-   
+사용자가 사이트를 떠나거나 브라우저 창을 닫으면 타이머를 중단해야한다.
+
 ##### 예시
 
 아래 이미지는 인지장애, 고령자 등을 고려하여 시간 연장 기능을 제공하고 있다.  
-![image](https://user-images.githubusercontent.com/58136073/139585204-5f4cc783-c45a-4acb-aed0-1bfbc8e12e29.png)  
+![image](https://user-images.githubusercontent.com/58136073/139585204-5f4cc783-c45a-4acb-aed0-1bfbc8e12e29.png)
 
 <br/>
 
 그와 반대로 아래 이미지는 인지장애, 고령자 등을 고려하지 않은 UI이다.  
-![image](https://user-images.githubusercontent.com/58136073/139586243-a3d25bbd-738e-42c8-afd2-4201120db56f.png)     
+![image](https://user-images.githubusercontent.com/58136073/139586243-a3d25bbd-738e-42c8-afd2-4201120db56f.png)
 
 ---
 
@@ -574,20 +574,22 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 #### 2.3.1 Three Flashes or Below Threshold
 
 > 광과민성 발작  
-> : 오랜 시간 불규칙적으로 깜박거리는 광에 자극 받아 생기는 발작  
+> : 오랜 시간 불규칙적으로 깜박거리는 광에 자극 받아 생기는 발작
 
 광과민성 발작 장애가 있는 사람들을 위해 웹 페이지는 1초동안 3회 이상 깜박이거나 플래시가 빨간 임계값보다 낮게 구성하면 안된다.
 
 ##### 예시
+
 1997년 일본에서 방영되었던 포켓몬스터를 보고 750명의 아이들이 발작을 일으켰던 사건이 있었다. 포켓몬스터의 어떤 장면을 보고 아이들이
-광과민성 발작 증상을 보였던 것이다.   
+광과민성 발작 증상을 보였던 것이다.  
 [관련기사](https://news.mt.co.kr/mtview.php?no=2016121515265235919&outlink=1&ref=https%3A%2F%2Fsearch.naver.com)  
-![image](https://user-images.githubusercontent.com/58136073/139587942-ac294264-92ef-4564-8088-6969e0195ba4.png)   
+![image](https://user-images.githubusercontent.com/58136073/139587942-ac294264-92ef-4564-8088-6969e0195ba4.png)
 
 <br/>
 
 #### 2.3.2 Three Flashes
-웹 페이지는 1초 동안 3번 이상 깜박이는 콘텐츠를 포함해서는 안된다. 이 기준은 발작 가능성을 완전히 제거하는 것이 아닌, 최소한으로 줄이는 것이다. 
+
+웹 페이지는 1초 동안 3번 이상 깜박이는 콘텐츠를 포함해서는 안된다. 이 기준은 발작 가능성을 완전히 제거하는 것이 아닌, 최소한으로 줄이는 것이다.
 
 <br/>
 
@@ -701,10 +703,10 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ```css
 :focus {
-  outline: 3px solid #aaa;
+	outline: 3px solid #aaa;
 }
 :focus-visible {
-  outline: 3px solid #aaa;
+	outline: 3px solid #aaa;
 }
 ```
 
@@ -736,17 +738,17 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 <h1>Search Technical Periodicals</h1>
 <h2>Search</h2>
 <form action="search.php">
-  <p>
-    <label for="searchInput">Enter search topic: </label>
-    <input type="text" size="30" id="searchInput" />
-    <input type="submit" value="Go" />
-  </p>
+	<p>
+		<label for="searchInput">Enter search topic: </label>
+		<input type="text" size="30" id="searchInput" />
+		<input type="submit" value="Go" />
+	</p>
 </form>
 <h2>Available Periodicals</h2>
 <div class="jlinks">
-  <a href="pcoder.com">Professional Coder</a> |
-  <a href="algo.com">Algorithms</a> |
-  <a href="jse.com">Journal of Software Engineering</a>
+	<a href="pcoder.com">Professional Coder</a> |
+	<a href="algo.com">Algorithms</a> |
+	<a href="jse.com">Journal of Software Engineering</a>
 </div>
 <h2>Search Results</h2>
 ... search results are returned in this section ...
@@ -877,9 +879,9 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 ```html
 <html lang="ko">
-  ...
-  <p>스크린 리더 테스트 <span lang="en"> car </span></p>
-  ...
+	...
+	<p>스크린 리더 테스트 <span lang="en"> car </span></p>
+	...
 </html>
 ```
 
@@ -933,7 +935,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 <br/>
 
-- 아래는 카카오의 `알기 쉬운 개인정보 처리방침` 페이지입니다. 아래와 같이 그림으로 표현을 하니 훨씬 이해하기가 쉽습니다. 쿠팡보다 그림과 대화체로 설명해주는 것이 훨씬 이해하기 편한 것을 느낄 수 있습니다.
+- 아래는 카카오의 `알기 쉬운 개인정보 처리방침` 페이지입니다. 아래와 같이 그림과 같은 콘텐츠로 표현을 하니 쿠팡의 개인정보 처리 방침보다 훨씬 이해하기가 쉽습니다.
 
 ![카카오 개인정보처리 방침](<https://github.com/minsoftk/TIL/blob/master/blog/WCAG3.1.5(%EC%88%98%EC%A0%95).png?raw=true>)
 
@@ -1201,14 +1203,14 @@ HTML 마크업 언어를 사용하여 구현된 상태 메시지는 프로그래
 
 ```html
 <p role="status" aria-live="off">
-  이 텍스트가 업데이트 되어도 스크린리더 사용자에게 아무런 안내를 하지 않습니다.
+	이 텍스트가 업데이트 되어도 스크린리더 사용자에게 아무런 안내를 하지 않습니다.
 </p>
 <p role="status" aria-live="polite">
-  이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하지 않을 때 상태 메시지를
-  알려줍니다.
+	이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하지 않을 때 상태 메시지를
+	알려줍니다.
 </p>
 <p role="status" aria-live="assertive">
-  이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하든 즉시 상태 메시지를
-  알려줍니다.
+	이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하든 즉시 상태 메시지를
+	알려줍니다.
 </p>
 ```
