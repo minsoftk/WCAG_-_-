@@ -1,3 +1,140 @@
+# WCAG
+> Web Content Accessibility Guidelines의 약자로  W3C 웹 콘텐츠 접근성 가이드라인 표준 권고안은 웹 사이트/애플리케이션에서 **충족해야 하는 기준을 정의**하여 **장애가 있는 사용자가 보다 쉽게 이용할 수 있도록 준수해야 하는 지침**으로, 웹 서비스를 제작하는 사람들이 기획/디자인/개발 과정에서 고려해야 할 요구사항입니다.
+
+## 2.4 Navigable(탐색가능)
+
+사용자가 탐색하고, 콘텐츠를 찾고, 어디에 있는지 판단 할 수있는 방법을 제공해야 합니다.
+
+### 2.4.1 Bypass Blocks
+반복되는 콘텐츠 블록을 건너 뛸 수 있는 기능을 제공해야 합니다.
+#### 실패사례 : Bypass Blocks를 준수하지 않은 메인 뉴스 부분으로 건너띌 수 있는 기능이 없는 뉴스기사를 보여주는 웹사이트
+
+- 키보드 사용자 : 메인 뉴스에 도달하기 위해 링크를 눌러야 하는 횟수가 많아집니다
+- screen-reader 사용자 : 메인 뉴스 부분에 도달할 때 까지 많은 수의 단어를 들어야 합니다.
+- 화면 확대기 사용자 : 웹사이트의 상단부터 메인 뉴스 부분에 도달할 때 까지 화면을 내려서 찾아봐야 합니다.
+
+### 2.4.2 Page Titled
+웹 페이지는 주제나 목적을 설명하는 적절한 제목이 제공되어야 합니다.
+
+#### 실패사례 : title이 없는 경우
+![](https://images.velog.io/images/ywc8851/post/d22ac08c-9c71-44ef-9e26-c3dc1d3ae2b6/image.png)
+
+- screen-reader 사용자 : 이 웹사이트가 어떤 주제나 목적을 가지고 있는 사이트인지 title이 없기 때문에 알기 어렵다.
+### 2.4.3 Focus Order
+웹 페이지를 순차적으로 탐색 할 수 있고 탐색 순서가 의미 또는 작업에 영향을 주는 경우, 포커스 가능 컴포넌트는 의미와 작동 가능성을 유지하는 순서로 포커스를 받아야 합니다.
+
+#### 예시 : 회원가입 Form
+이메일과 비밀번호를 입력받아 회원가입이 되는 form이라고 할때
+- 성공 예시 : 이메일 input 포커스 -> 비밀번호 input 포커스 -> 회원가입 button 포커스
+
+- 실패 예시 : 이메일 input 포커스 -> 회원가입 button 포커스 -> 비밀번호 input 포커스 (작동 가능성 유지 ❌)
+
+### 2.4.4 Link Purpose (In Context)
+각 링크의 목적은 링크 텍스트 만으로 또는 링크 텍스트와 프로그래밍 방식으로 결정된 링크 컨텍스트와 함께 결정될 수 있어야 합니다.
+
+#### 예시 : 링크에 해당 URI의 정보에 대한 설명을 제공하는 텍스트가 포함되어 있는 성공사례
+![](https://images.velog.io/images/ywc8851/post/05435882-b686-4bf6-b181-613410627818/image.png)
+### 2.4.5 Multiple Ways
+웹 페이지가 프로세스의 결과 또는 단계인 경우를 제외하고 웹 페이지 집합 내에서 웹 페이지를 찾을 수 있는 방법은 여러 가지 방법으로 제공 되어야 합니다.
+
+대부분의 웹사이트에는 홈페이지로 바로 갈 수 있게끔 페이지 상단의 로고를 누르면 홈페이지로 이동되게끔 구현되어져 있습니다.
+
+❗ 쇼핑몰과 같은 결제가 필요한 과정에서 로고를 클릭시 페이지의 이동이 안되는 경우는 프로세스의 결과 또는 단계인 경우이기 때문에 개발자가 의도적으로 a태그를 사용하지 않은 것으로 볼 수 있습니다.
+
+### 2.4.6 Headings and Labels
+제목, 레이블은 적절한 주제 및 목적을 설명해야 합니다.
+#### 예시 : Form에 어떤 정보를 입력해야하는지 알려주는 성공사례
+![](https://images.velog.io/images/ywc8851/post/9add0644-8b88-4f12-9b22-69f4cfca9fa0/image.png)
+로그인 Form은 사용자의 회원 아이디와 비밀번호를 묻습니다. ID과 비밀번호를 묻는 두 개의 입력 필드로 구성됩니다. 따라서 사용자가 어떠한 정보를 입력해야 되는지 알 수 있습니다.
+### 2.4.7 Focus Visible
+키보드로 조작 가능한 UI는 키보드 포커스 상태가 화면에 표시되어야 합니다.
+
+목적 : 어떤 요소가 키보드 포커스를 가지고 있는지 알 수 있도록 돕는 것이다.
+
+- tab키를 통해 키보드 포커싱을 이동할 때 포커싱된 요소를 css의 :focus 속성을 통해 구현을 할 수 있으며 키보드로 해당 요소를 선택해야만 적용되도록 하려면 :focus-visible을 사용하면 된다.
+```css
+:focus {
+    outline: 3px solid #aaa;
+}
+:focus-visible {
+    outline: 3px solid #aaa;
+}
+```
+
+### 2.4.8 Location
+일련의 웹 페이지에서 사용자 위치에 대한 정보를 이용 가능해야 합니다.
+#### 예시 : 사용자 위치에 대한 정보를 보여주는 성공사례
+![](https://images.velog.io/images/ywc8851/post/a3393133-7f0d-4141-b8cd-f7612316edb4/image.png)
+### 2.4.9 Link Purpose (Link Only)
+링크의 목적이 일반적인 사용자에게 모호한 경우를 제외하고 링크 텍스트만으로 각 링크의 목적을 식별 할 수 있는 방법을 제공해야 합니다.
+
+### 2.4.10 Section Headings
+섹션 제목은 콘텐츠를 구성하는데 사용됩니다.
+#### h2 요소를 사용하여 각 섹션 제목을 표시하여 검색 페이지의 섹션을 구성하는 예시
+```html
+<h1>Search Technical Periodicals</h1>
+ <h2>Search</h2>
+ <form action="search.php">
+  <p><label for="searchInput">Enter search topic: </label>
+  <input type="text" size="30" id="searchInput">
+  <input type="submit" value="Go"></p>
+ </form>
+ <h2>Available Periodicals</h2>
+ <div class="jlinks">
+  <a href="pcoder.com">Professional Coder</a> |
+  <a href="algo.com">Algorithms</a> |
+  <a href="jse.com">Journal of Software Engineering</a>
+ </div>
+ <h2>Search Results</h2>
+ ... search results are returned in this section ... 
+```
+
+## 2.5 Input Modalities(입력 양식)
+
+키보드가 아닌 다양한 입력을 통해 기능을 보다 쉽게 조작 할 수 있도록 만들어야 합니다.
+
+### 2.5.1 Pointer Gestures
+멀티 포인트 또는 패스 기반 제스처(gesture)를 사용하는 모든 기능은 멀티 포인트 또는 패스 기반 제스처가 필수적인 경우가 아니면 패스 기반 제스처 없이 싱글 포인터로 작동 할 수 있어야 합니다.
+#### 실패사례 : 카카오맵
+![](https://images.velog.io/images/ywc8851/post/a4893c47-cbb0-4719-ac10-bcedcd7ba35f/image.png)
+- 이유 : 싱글 포인트로 지도를 이동 시키는 기능을 제공되지 않습니다. 일반적으로 포인트를 사용해 밀거나 끄는 동작으로 지도를 이동 시키지만, 이를 대체하는 수단을 제공하고 있지 않습니다.
+#### 성공사례 : 미국의 TopoView 지도 뷰어 애플리케이션
+![](https://images.velog.io/images/ywc8851/post/ee9d6c69-d1db-4bcc-abe8-4a6952a9ccdf/image.png)
+- 위에선 존재하지 않았던 대체하는 수단을 제공한다.
+
+### 2.5.2 Pointer Cancellation
+싱글 포인터를 사용하여 작동할 수 있는 기능의 경우 이 지침은 실수로 잘못된 위치를 만지거나 클릭 할 수 있는 손 떨림, 운동 장애가 있는 사람들을 돕습니다. 실수로 인해 의도하지 않은 동작이 발생했을 때 취소할 수 있는 기능을 제공합니다. 
+- down 이벤트 사용 ❌
+down 이벤트는 마우스 버튼을 누르거나, 터치 또는 키를 누른 순간 즉시 기능을 활성화되기 때문에 잘못된 위치를 클릭하였을 때 혹은 터치실수가 있을 때 실행을 취소할 수 없기 때문에 down 이벤트에서 즉시실행되도록 연결하지 않으면 실수를 범할 확률을 줄일 수 있습니다
+- 중단(Abort) 또는 실행 취소(Undo)
+함수의 완료는 up 이벤트에 있고 완료 전에 함수를 중단하거나, 완료 후 함수를 실행 취소하는 방법을 제공합니다.
+- up 이벤트를 통한 취소(Reversal)
+사용자가 잘못된 위치를 터치 했을 때, 손가락이나 포인터를 들어 올리기 전에 손가락이나 포인터를 그 위치에서 벗어나게 하여 의도하지 않은 작업을 취소할 수 있습니다.
+
+### 2.5.3 Label in Name
+텍스트 또는 이미지 텍스트를 포함하는 레이블이 있는 UI 컴포넌트의 경우, 이름에 시각적으로 표시되는 텍스트가 포함되어야 합니다.
+#### 실패 사례 (보이는 버튼 텍스트와 아리아 레이블을 통해 제공된 액세스 가능한 이름의 불일치)
+```html
+<button id="sitesearch" aria-label="Find in this site">Go</button>
+```
+#### 성공 사례 (label 요소의 text는 for 속성을 통해 input에 name을 제공)
+```html
+<input type="checkbox" id="notification" name="notify" value="delays">
+<label for="notification">Notify me of delays</label>
+```
+### 2.5.4 Motion Actuation
+필수적으로 동작(모션)이 작동을 위해 필요한 경우가 아니라면 동작에 의존하지 않는 것이 좋습니다만, 동작을 통한 기능 수행이 필요한 경우 대체 인터페이스를 제공하고, 해당 기능을 끌 수 있도록 해야 합니다.
+- 동작(모션) 실행 기능에 대한 대체 인터페이스를 제공해야 합니다.
+- 사용자가 동작(모션) 실행 기능을 끌 수 있도록 해야 합니다.
+### 2.5.5 Target Size
+포인터 또는 터치에 의한 실행 영역은 44×44 CSS 픽셀 이상이어야 합니다. 44×44 CSS 픽셀 크기는 일반적으로 모바일 장치의 9mm 크기에 해당합니다. 이 크기는 대부분의 사람들이 손가락이나 다른 포인팅 장치를 사용하여 보고 터치할 수 있을 만큼 충분히 큽니다.
+![](https://images.velog.io/images/ywc8851/post/e46b3d9e-2a79-4a16-bfb4-276e87c1dfad/image.png)
+
+❗ ```<button>, <select>, <input type="radio"> ```요소와 같은 표준 HTML 컨트롤은 개발자가 임의로 스타일을 조정하지 않을 경우 이 성공기준에서 예외 처리됩니다
+#### 실패사례
+![](https://images.velog.io/images/ywc8851/post/05aa7e67-cce5-4330-a94b-010071c2a42f/image.png)
+### 2.5.6 Concurrent Input Mechanisms
+웹 콘텐츠는 제한이 필수적인 경우, 예를 들면 콘텐츠 보안 보장 또는 사용자 설정을 침해하면 안되는 경우를 제외하고 플랫폼에서 사용할 수 있는 입력 방식을 제한하지 않습니다.
 ## 3. 이해 용이성의 원칙
 
 ## 3.1 가독성
@@ -293,3 +430,50 @@ UI 컴포넌트 설정을 변경해도 컴포넌트를 사용하기 전에 사�
   <br/>
 
   ![나가기 확인 알림창](https://github.com/minsoftk/TIL/blob/master/blog/3.3.6.png?raw=true)
+# 4. Robust
+## 4.1 Compatible
+보조 기술을 포함하여 현재, 미래의 도구와 호환성을 높여야 합니다.
+### 4.1.1 Parsing
+HTML 마크업 언어를 사용하여 구현된 콘텐츠에서 각 요소는 시작 및 종료 태그가 일치해야 하고, 표준 기술 사양에 따라 중첩 되며, 중복된 속성을 가져서는 안되며, 모든 id 속성 값은 문서에서 유일해야 합니다.
+#### 잘못된 사례
+```html
+<p This is a paragraph</p>
+<p>This is a paragraph<p>
+<p>This is a paragraph
+<input title="name type="text">
+<input title="name"type="text">
+<input title=Enter name here type=text>
+```
+
+### 4.1.2 Name, Role, Value
+모든 UI 컴포넌트(폼 요소, 링크 및 사용자 정의 컴포넌트 등)는 이름(name)과 역할(role)을 프로그래밍 방식으로 설정할 수 있습니다. 상태(state), 속성(properties) 및 값(value) 또한 프로그래밍 방식으로 설정할 수 있습니다. 이러한 설정 사항은 보조 기술을 포함한 사용자 에이전트에서 활용됩니다.
+#### 잘못된 사례 (수정 전)
+```html
+<img src="go.gif" alt="Go" onclick="submitForm();" />
+```
+img는 button으로 사용되는데 이 경우 역할(role)이 잘못되었고 요소에 name이 사용되지 않았다.
+#### 올바른 사례 (수정 후)
+```html
+<input type="button" value="Go" name="go_button_form" />
+```
+올바른 역할(role)이 사용되었고 input요소가 button type을 갖고 유일한 name이 요소에게 주어졌다. 이러한 방식으로 화면 판독기는 사용자에게 요소가 실제로 버튼임을 전달하며, 이는 사용자가 버튼을 클릭해야 할 수 있음을 쉽게 알 수 있게 한다.
+
+### 4.1.3 Status Messages
+HTML 마크업 언어를 사용하여 구현된 상태 메시지는 프로그래밍 방식으로 역할 또는 속성을 설정 함으로서, 포커스 상태가 아니어도 보조 기술에 의해 사용자에게 표시되거나 읽힐 수 있습니다. 스크린리더 사용자는 상태 메시지를 듣습니다. 화면을 확대해서 보는 사람들은 화면에 보이지 않는 메시지에 대해 알 수 있습니다. 인지 장애가 있는 사용자는 깜빡 이거나, 말하는상태 메시지를 통해 주의를 기울일 수 있습니다.
+
+#### 성공 사례 (경고메시지 화면출력)
+![](https://images.velog.io/images/ywc8851/post/e8473692-63e6-4d3b-83d3-3dd846fc0c5e/image.png)
+사용자가 너무 오랜시간 아무 것도 안하고 대기 상태 였다가 다시 입력을 시도할 경우, 시스템에서 로그오프 할 것이라는 경고 메시지가 화면에 표시 되고, NVDA는 이를 감지해 새로운 경고 메시지를 음성 출력 합니다.
+
+- 상태메시지를 알려주기 위해 Aria Live영역 사용하기
+```html
+<p role="status" aria-live="off">
+  이 텍스트가 업데이트 되어도 스크린리더 사용자에게 아무런 안내를 하지 않습니다.
+</p>
+<p role="status" aria-live="polite">
+  이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하지 않을 때 상태 메시지를 알려줍니다.
+</p>
+<p role="status" aria-live="assertive">
+  이 텍스트가 업데이트 되면, 사용자가 어떤 일을 수행하든 즉시 상태 메시지를 알려줍니다.
+</p>
+```
