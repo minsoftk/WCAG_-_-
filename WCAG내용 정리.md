@@ -941,7 +941,7 @@ ex) Styled Headings, Dynamically Generated Images, A quote, Navigation items, A 
 
 <br/>
 
-위의 예시들을 간단하게 비교해보니 어려운 내용들을 이해하기 쉽게 만드는 것이 왜 중요한지 알 수 있었습니다.
+위의 예시들을 시각적인 부분만 비교해도 어려운 내용들을 이해하기 쉽게 만드는 것이 왜 중요한지 알 수 있었습니다.
 
 <br/>
 
